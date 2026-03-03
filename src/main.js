@@ -52,11 +52,11 @@ function initMobileMenu() {
 }
 
 /* ──────────────────────────────────────────
-   3. Intersection Observer — Lazy Video Load
+   3. Video Loading — Hero Eager + Lazy Scroll
    
-   CRITICAL: All videos start with preload="none"
-   and remain paused until they enter the viewport.
-   This saves bandwidth on Vercel and gives a fast LCP.
+   Hero videos load IMMEDIATELY on page load.
+   Other videos start loading 400px before
+   they scroll into view for smooth playback.
    ────────────────────────────────────────── */
 function initLazyVideos() {
     const videos = document.querySelectorAll('.lazy-video');
@@ -71,41 +71,66 @@ function initLazyVideos() {
         return video.dataset.src;
     }
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                const video = entry.target;
+    // Load and play a video
+    function loadVideo(video) {
+        const src = getVideoSrc(video);
+        if (!src || video.src === src || video.querySelector('source')) return;
 
-                if (entry.isIntersecting) {
-                    // Load and play
-                    const src = getVideoSrc(video);
-                    if (src && !video.querySelector('source')) {
-                        const source = document.createElement('source');
-                        source.src = src;
-                        source.type = 'video/mp4';
-                        video.appendChild(source);
-                        video.load();
-                    }
+        video.src = src;
+        video.load();
 
-                    video.play().then(() => {
-                        video.classList.add('is-playing');
-                    }).catch(() => {
-                        // Autoplay blocked — still show poster
-                        video.classList.add('is-playing');
-                    });
-                } else {
-                    // Pause when out of view
-                    video.pause();
-                }
-            });
-        },
-        {
-            rootMargin: '100px 0px', // start loading slightly before visible
-            threshold: 0.1,
+        // Show video only when it has enough data to display
+        video.addEventListener('canplay', () => {
+            video.classList.add('is-playing');
+        }, { once: true });
+
+        video.play().then(() => {
+            video.classList.add('is-playing');
+        }).catch(() => {
+            // Autoplay blocked — still reveal
+            video.classList.add('is-playing');
+        });
+    }
+
+    // Separate hero videos (inside .hero) from card videos
+    const heroVideos = [];
+    const scrollVideos = [];
+
+    videos.forEach((video) => {
+        if (video.closest('.hero')) {
+            heroVideos.push(video);
+        } else {
+            scrollVideos.push(video);
         }
-    );
+    });
 
-    videos.forEach((video) => observer.observe(video));
+    // HERO VIDEOS: Load immediately — no waiting
+    heroVideos.forEach((video) => {
+        video.preload = 'auto';
+        loadVideo(video);
+    });
+
+    // SCROLL VIDEOS: Lazy load with generous rootMargin
+    if (scrollVideos.length > 0) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const video = entry.target;
+                    if (entry.isIntersecting) {
+                        loadVideo(video);
+                    } else {
+                        video.pause();
+                    }
+                });
+            },
+            {
+                rootMargin: '400px 0px', // start loading 400px before visible
+                threshold: 0.01,
+            }
+        );
+
+        scrollVideos.forEach((video) => observer.observe(video));
+    }
 }
 
 /* ──────────────────────────────────────────

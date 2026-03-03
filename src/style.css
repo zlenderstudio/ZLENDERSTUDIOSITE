@@ -8,7 +8,7 @@
   src: url('../assets/website files/WastedPersonalUseRegular-WyegG.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 /* ─── Tailwind Directives ─── */
@@ -324,9 +324,22 @@
   }
 }
 
-/* ─── Video Fallback — ensure visibility if IntersectionObserver fails ─── */
-video {
-  opacity: 1 !important;
+/* ─── Video Fallback — delayed safety net if JS/Observer fails ─── */
+.lazy-video {
+  animation: video-fallback-reveal 0s ease 5s forwards;
+}
+
+@keyframes video-fallback-reveal {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ─── Stat Number Font Fix — use Inter for proper numeral rendering ─── */
+#stats .font-heading,
+#built-to-create .font-heading {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-weight: 700;
 }
 
 /* ─── Mobile Stats / Card Overlap Fix (390px–430px) ─── */
@@ -345,9 +358,11 @@ video {
     gap: 0.5rem;
   }
 
-  /* Stat numbers — clamp to prevent overflow */
+  /* Stat numbers — clamp to prevent overflow + use body font for proper numerals */
   #stats .font-heading,
   #built-to-create .font-heading {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
     font-size: clamp(2rem, 8vw, 4rem);
     line-height: 1.2;
     word-break: break-word;
