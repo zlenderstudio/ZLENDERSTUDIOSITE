@@ -1,15 +1,8 @@
 /* ─── CDN Font Imports ─── */
 /* Inter (Body/UI) + Syne (Heading fallback) + JetBrains Mono (Accent) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Syne:wght@700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* Local heading font from /assets */
-@font-face {
-  font-family: 'Wasted';
-  src: url('../assets/website files/WastedPersonalUseRegular-WyegG.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
+
 
 /* ─── Tailwind Directives ─── */
 @tailwind base;
@@ -184,18 +177,18 @@
   }
 
   .hero-subtitle {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(0.875rem, 2vw, 1.125rem);
     font-weight: 400;
     color: rgba(255, 255, 255, 0.85);
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    max-width: 600%;
     margin-left: auto;
     margin-right: auto;
     opacity: 0;
     animation: fade-in-up 1s ease-out 0.6s forwards;
-  }
+}
 
   .hero-cta {
     opacity: 0;

@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Preload custom heading font to prevent FOUT -->
-    <link rel="preload" as="font" type="font/ttf" href="../assets/website files/WastedPersonalUseRegular-WyegG.ttf"
+    <link rel="preload" as="font" type="font/ttf" href="../assets/website files\fonts\Glorea-Demo.otf" 
         crossorigin />
     <!-- Preload Critical Video Assets -->
     <link rel="preload" as="video" href="../assets/website files/Eagle Final 50.mp4" media="(min-width: 768px)" />
@@ -44,18 +44,18 @@
 
     <!-- GLASS NAV -->
     <nav id="glass-nav" class="glass-nav">
-        <div class="mx-auto flex max-w-7xl items-center justify-between">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-8">
             <a href="/" class="flex items-center">
-                <h2 class="text-xl font-heading font-bold tracking-wider text-white uppercase md:text-2xl">ZLENDER</h2>
-            </a>
-            <div class="hidden items-center gap-8 md:flex">
+    <img src="../assets/website files/LOGO.png" alt="ZLENDER" class="h-7 w-auto" />
+</a>
+            <div class="hidden items-center gap-12 md:flex absolute left-1/2 -translate-x-1/2">
                 <a href="/"
-                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Home</a>
-                <a href="/services/" class="font-body text-sm font-medium text-white transition-colors">Services</a>
+                    class="font-body text-lg font-medium text-white/80 transition-colors hover:text-white">Home</a>
+                <a href="/services/" class="font-body text-lg font-medium text-white/80 transition-colors hover:text-white">Services</a>
                 <a href="/network/"
-                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Network</a>
+                    class="font-body text-lg font-medium text-white/80 transition-colors hover:text-white">Network</a>
                 <a href="/about-us/"
-                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">About Us</a>
+                    class="font-body text-lg font-medium text-white/80 transition-colors hover:text-white">About Us</a>
             </div>
             <div class="hidden md:block"><a href="/contact-us/" class="cta-button">REQUEST A QUOTE <span
                         class="text-base">+</span></a></div>
@@ -72,209 +72,1832 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-video-bg">
-            <video class="lazy-video" data-src-mobile="/assets/website files/EAGLE VERTICAL TO PUT ON WEB.mp4"
-                data-src-desktop="/assets/website files/Eagle Final 50.mp4" autoplay muted loop playsinline
-                preload="none" poster="../assets/website files/Screenshot_2024-10-22_033750.png"></video>
-        </div>
+    <video class="lazy-video" data-src-mobile="/assets/website files/EAGLE VERTICAL TO PUT ON WEB.mp4"
+        data-src-desktop="/assets/website files/SERVICES HERO VID TO USE.mp4" autoplay muted loop playsinline
+        preload="none" poster="../assets/website files/Screenshot_2024-10-22_033750.png"></video>
+    <div style="position:absolute; inset:0; background:rgba(0,0,0,0.6); z-index:1;"></div>
+</div>
+
         <div class="hero-content">
-            <h1 class="hero-title">SERVICES</h1>
+            <img src="../assets/website files/Logoservice.png" alt="ZLENDER" class="mx-auto w-64 md:w-[800px] opacity-0 animate-[fade-in-up_1s_ease-out_0.3s_forwards]" />
             <p class="hero-subtitle">Where Ideas Come Alive in 3D, Animation & Interactive Worlds</p>
             <div class="hero-cta"><a href="/contact-us/" class="cta-button cta-button-filled">REQUEST A QUOTE <span
                         class="text-base">+</span></a></div>
         </div>
     </section>
 
-    <!-- WHAT WE DO -->
-    <section class="section bg-surface">
-        <p class="mb-4 text-center font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted" data-animate>
-            WHAT WE DO</p>
-        <h2 class="mb-6 text-center font-heading text-3xl font-bold text-white uppercase md:text-5xl" data-animate>
-            3D Animation, Modeling &<br />Game Development Services
-        </h2>
-        <p class="mx-auto mb-16 max-w-4xl text-center font-body text-base leading-relaxed text-muted" data-animate>
-            ZLENDER delivers end-to-end creative solutions across animation, 3D design, and interactive game
-            development.
-            We specialize in transforming ideas into visually striking, technically solid experiences that engage
-            audiences
-            and perform across platforms. Our services cover everything from character and environment creation to
-            cinematic
-            animation, real-time gameplay systems, and full game production.
-        </p>
-    </section>
 
-    <!-- GAME DEVELOPMENT SERVICES -->
-    <section class="section-full bg-card">
-        <div class="mx-auto max-w-7xl px-6">
-            <h2 class="mb-8 font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>Game
-                Development Services</h2>
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-                <div data-animate>
-                    <p class="font-body text-base leading-relaxed text-muted">
-                        Our game development services cover stylized and immersive experiences across indie, casual, and
-                        mid-core projects for PC, mobile, and cross-platform builds. We support your vision from early
-                        concept to final release, delivering custom gameplay systems, polished mechanics, and optimized
-                        builds tailored to your platform and production goals.
-                    </p>
-                    <p class="mt-4 font-body text-base leading-relaxed text-muted">
-                        Working with modern engines and efficient pipelines, our developers and artists collaborate
-                        closely to prototype quickly, iterate intelligently, and refine gameplay without sacrificing
-                        performance or visual quality — ensuring a smooth, scalable development process from start to
-                        finish.
-                    </p>
+    
+<!-- ═══════════════════════════════════════
+       STATS BAR
+       ═══════════════════════════════════════ -->
+  <section id="stats" class="bg-card border-t border-b border-border">
+    <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 py-12 text-center sm:grid-cols-3">
+      <div data-animate>
+        <p class="font-heading text-4xl font-bold text-white md:text-5xl">5.0</p>
+        <p class="mt-2 font-body text-sm text-muted">Elite Client Rating</p>
+      </div>
+      <div data-animate>
+        <p class="font-heading text-4xl font-bold text-white md:text-5xl">100+</p>
+        <p class="mt-2 font-body text-sm text-muted">Completed Projects</p>
+      </div>
+      <div data-animate>
+        <p class="font-heading text-4xl font-bold text-white md:text-5xl">100%</p>
+        <p class="mt-2 font-body text-sm text-muted">Client Satisfaction Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CLIENTS MARQUEE
+       ═══════════════════════════════════════ -->
+  <section id="clients" class="overflow-hidden bg-[#0A0A0A] py-10 border-b border-white/10 relative">
+    <div class="mx-auto flex max-w-7xl items-center px-6">
+
+      <!-- Stationary Text -->
+      <div class="relative z-10 bg-[#0A0A0A] pr-8 md:pr-12 lg:pr-16 shrink-0">
+        <h2 class="font-heading text-xl font-bold text-white uppercase tracking-widest md:text-3xl">OUR CLIENTS</h2>
+      </div>
+
+      <!-- Scrolling Marquee -->
+      <div class="relative flex flex-1 overflow-hidden mask-edges">
+        <div class="flex animate-marquee items-center gap-12 whitespace-nowrap pl-12 md:gap-20 md:pl-20">
+
+          <!-- Logo Set 1 -->
+          <img src="../assets/website files//1707397405_logocom.png" alt="Client 1"
+            class="h-10 object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 11, 2026, 04_49_29 PM (1).png" alt="Client 2"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 12, 2026, 11_56_33 AM (1).png" alt="Client 3"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 12, 2026, 02_09_36 PM (1).png" alt="Client 4"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 12, 2026, 12_07_20 PM (2) (2).png" alt="Client 5"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//Freelancer_logo_og.png" alt="Freelancer"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//Fiverr_Logo_09.2020.svg.png" alt="Fiverr"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+
+          <!-- Logo Set 2 (for seamless loop) -->
+          <img src="../assets/website files//1707397405_logocom.png" alt="Client 1"
+            class="h-10 object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 11, 2026, 04_49_29 PM (1).png" alt="Client 2"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 12, 2026, 11_56_33 AM (1).png" alt="Client 3"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 12, 2026, 02_09_36 PM (1).png" alt="Client 4"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//ChatGPT Image Jan 12, 2026, 12_07_20 PM (2) (2).png" alt="Client 5"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//Freelancer_logo_og.png" alt="Freelancer"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="../assets/website files//Fiverr_Logo_09.2020.svg.png" alt="Fiverr"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+
+        </div>
+      </div>
+    </div>
+  </section>
+       <!-- PORTFOLIO VIDEO SECTION -->
+<!-- PORTFOLIO VIDEO SLIDER -->
+<section class="section-full bg-black py-24">
+    <div class="mx-auto max-w-5xl px-6">
+
+       <!-- Title with Logo -->
+<div class="text-center mb-16" data-animate>
+    <div class="flex items-center justify-center gap-3 mb-5">
+        <div class="h-px flex-1 bg-white/15"></div>
+        <img src="../assets/website files/Zlogo.png" alt="ZLENDER" class="h-6 w-auto opacity-60" />
+        <div class="h-px flex-1 bg-white/15"></div>
+    </div>
+    <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-white/40 mb-4">OUR PORTFOLIO</p>
+    <h2 class="font-heading text-4xl font-bold text-white uppercase md:text-6xl leading-tight">
+        Previous Work<br/><span class="text-white/30">We Completed</span>
+    </h2>
+    <div class="flex items-center justify-center gap-4 mt-6">
+        <div class="h-px w-16 bg-white/20"></div>
+        <span class="font-mono text-xs text-white/30 uppercase tracking-widest">6 Projects</span>
+        <div class="h-px w-16 bg-white/20"></div>
+    </div>
+</div>
+
+        <!-- Slider Container -->
+        <div class="relative" data-animate>
+
+            <!-- Slides -->
+            <div id="portfolio-slides" class="overflow-hidden rounded-2xl">
+                <div class="flex transition-transform duration-500 ease-in-out" id="slides-track">
+
+                    <!-- Slide 1 -->
+                    <div class="min-w-full">
+                        <div class="relative w-full rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:16/9;">
+                            <iframe src="https://www.youtube.com/embed/lDrWQ24aicQ?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="font-heading text-xl font-bold text-white uppercase mb-3">Past Videos We Created for our clients</h3>
+                            <p class="font-body text-base leading-relaxed text-muted"> A cinematic 3D animation montage showcasing our studio’s collaborative storytelling, expressive character animation, and highlights from our latest creative work.</p>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Modeling</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Character Animation</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rigging</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Texturing</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rendering</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Lighting</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Animation</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="min-w-full">
+                        <div class="relative w-full rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:16/9;">
+                            <iframe src="https://www.youtube.com/embed/ncrhBEOQirg?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="font-heading text-xl font-bold text-white uppercase mb-3">Team Work Makes The Dream Work</h3>
+                            <p class="font-body text-base leading-relaxed text-muted">Four brothers, four extraordinary skills, one heroic mission to save a princess and show the power of unity.</p>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Modeling</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Character Animation</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rigging</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Texturing</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rendering</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Lighting</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Animation</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="min-w-full">
+                        <div class="relative w-full rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:16/9;">
+                            <iframe src="https://www.youtube.com/embed/rR3PxzmtwCU?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="font-heading text-xl font-bold text-white uppercase mb-3">The Lost Star</h3>
+                            <p class="font-body text-base leading-relaxed text-muted">A touching cosmic tale of a lonely star who learns that true brightness comes not from shining alone, but from standing together with friends.</p>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Modeling</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Character Animation</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rigging</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Texturing</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rendering</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Lighting</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Animation</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="min-w-full">
+                        <div class="relative w-full rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:16/9;">
+                            <iframe src="https://www.youtube.com/embed/K3TINzpN-ig?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="font-heading text-xl font-bold text-white uppercase mb-3">Closest to My Heart</h3>
+                            <p class="font-body text-base leading-relaxed text-muted">A warm story of a young artist who explores new hobbies only to rediscover that her true passion—drawing—will always remain closest to her heart</p>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Modeling</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Character Animation</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rigging</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Texturing</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rendering</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Lighting</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Animation</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="min-w-full">
+                        <div class="relative w-full rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:16/9;">
+                            <iframe src="https://www.youtube.com/embed/_VHSZkgqQBA?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="font-heading text-xl font-bold text-white uppercase mb-3">GIRL WHO LEARNT TO SMILE</h3>
+                            <p class="font-body text-base leading-relaxed text-muted"> A heartfelt journey of a sad girl guided by a magical owl who discovers the beauty of life and learns that happiness comes from appreciating the world around her</p>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Modeling</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Character Animation</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rigging</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Texturing</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rendering</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Lighting</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Animation</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="min-w-full">
+                        <div class="relative w-full rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:16/9;">
+                            <iframe src="https://www.youtube.com/embed/ahWaQf1L3Tw?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="font-heading text-xl font-bold text-white uppercase mb-3">Start With An Idea</h3>
+                            <p class="font-body text-base leading-relaxed text-muted">A concept-driven 3D animation that captures the creative process from initial idea to fully realised animated world.</p>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Modeling</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Character Animation</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rigging</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Texturing</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Rendering</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">Lighting</span>
+                            <span class="rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-medium text-white uppercase tracking-wider">3D Animation</span>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
-                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Full Game Development</h4>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
-                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Environment & Level Design
-                        </h4>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
-                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">VR Meta Development</h4>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
-                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Character Design &
-                            Animation</h4>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
-                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Gameplay Systems &
-                            Mechanics</h4>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
-                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Performance Optimisations
-                        </h4>
-                    </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="mt-8 flex items-center justify-between">
+                <button id="prev-btn" onclick="changeSlide(-1)" class="cta-button text-sm">← PREV</button>
+                <div class="flex gap-2" id="dots"></div>
+                <button id="next-btn" onclick="changeSlide(1)" class="cta-button text-sm">NEXT →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let current = 0;
+        const total = 6;
+        const track = document.getElementById('slides-track');
+        const dotsContainer = document.getElementById('dots');
+
+        for (let i = 0; i < total; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'h-2 w-2 rounded-full border border-white/40 transition-all duration-300 ' + (i === 0 ? 'bg-white w-6' : 'bg-transparent');
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+        }
+
+        function updateDots() {
+            const dots = dotsContainer.querySelectorAll('button');
+            dots.forEach((dot, i) => {
+                dot.className = 'h-2 rounded-full border border-white/40 transition-all duration-300 ' + (i === current ? 'bg-white w-6' : 'bg-transparent w-2');
+            });
+        }
+
+        function goToSlide(index) {
+            const iframes = document.querySelectorAll('#slides-track iframe');
+            iframes.forEach(iframe => { iframe.src = iframe.src; });
+            current = index;
+            track.style.transform = `translateX(-${current * 100}%)`;
+            updateDots();
+        }
+
+        function changeSlide(dir) {
+            current = (current + dir + total) % total;
+            goToSlide(current);
+        }
+        </script>
+
+
+</section> 
+
+
+
+    <!-- OUR SERVICES MARQUEE -->
+<section class="section-full bg-white py-20 overflow-hidden border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-6 mb-12">
+        <p class="text-center font-mono text-xs font-medium uppercase tracking-[0.25em] text-black/50 mb-3">WHAT WE OFFER</p>
+        <h2 class="text-center font-heading text-3xl font-bold text-black uppercase md:text-5xl">OUR SERVICES</h2>
+    </div>
+
+    <!-- ROW 1: Animation Services (scrolling left) -->
+    <div class="relative mb-4 overflow-hidden marquee-row">
+        <div class="flex gap-4 animate-marquee-left" style="width: max-content;">
+            
+            <!-- Set 1 -->
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎬</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Character Animation</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎥</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">3D Animation Videos</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">📺</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Cartoon & Series Creation</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">✂️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">2D Edited Videos</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">⚡</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Motion Graphics & Effects</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">📱</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Social Media Videos</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🏆</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Commercial Brand Videos</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎞️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Cinematics & Promos</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">💡</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Explainer Videos</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎨</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Product Animation Ads</p>
+                </div>
+            </div>
+
+            <!-- Set 2 (duplicate for seamless loop) -->
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎬</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Character Animation</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎥</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">3D Animation Videos</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">📺</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Cartoon & Series Creation</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">✂️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">2D Edited Videos</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">⚡</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Motion Graphics & Effects</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">📱</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Social Media Videos</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🏆</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Commercial Brand Videos</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎞️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Cinematics & Promos</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">💡</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Video</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Explainer Videos</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🎨</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">Animation</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Product Animation Ads</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- ANIMATION SERVICES -->
-    <section class="section-full bg-black py-24">
-        <div class="mx-auto max-w-5xl px-6" data-animate>
-            <h2 class="font-heading text-3xl font-bold tracking-widest text-white uppercase md:text-5xl lg:text-6xl">
-                ANIMATION SERVICES WE PROVIDE</h2>
-            <div class="mt-6 flex md:justify-end">
-                <p class="max-w-2xl font-body text-sm leading-relaxed text-gray-400 md:text-base">
-                    Our 3D animation services focus on creating expressive cartoon animations, cinematic sequences,
-                    and character-driven content designed to engage and tell strong visual stories.
+    <!-- ROW 2: 3D Modeling Services (scrolling right) -->
+    <div class="relative overflow-hidden marquee-row">
+        <div class="flex gap-4 animate-marquee-right" style="width: max-content;">
+
+            <!-- Set 1 -->
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🧑‍🎨</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Character Creation & Sculpting</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🦴</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Character Rigging</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🖨️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">3D Printable Assets</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">📦</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Realistic Product Models</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">⚔️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Weapons, Props & Objects</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🗺️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Map & Environment Design</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🔮</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Image to 3D Conversion</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🏭</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Industrial Models</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🗿</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Sculpture Design</p>
+                </div>
+            </div>
+
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">✏️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Product & Concept Design</p>
+                </div>
+            </div>
+
+            <!-- Set 2 (duplicate for seamless loop) -->
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🧑‍🎨</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Character Creation & Sculpting</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🦴</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Character Rigging</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🖨️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">3D Printable Assets</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">📦</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Realistic Product Models</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">⚔️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Weapons, Props & Objects</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🗺️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Map & Environment Design</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🔮</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Image to 3D Conversion</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🏭</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Industrial Models</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">🗿</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Sculpture Design</p>
+                </div>
+            </div>
+            <div class="service-card flex items-center gap-5 rounded-2xl border border-black/10 bg-white px-10 py-7 min-w-max shadow-sm">
+                <span class="text-4xl">✏️</span>
+                <div>
+                    <p class="font-mono text-xs text-black/40 uppercase tracking-widest mb-0.5">3D Modeling</p>
+                    <p class="font-heading text-lg font-bold text-black uppercase">Product & Concept Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <style>
+@keyframes marquee-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+.animate-marquee-left {
+    animation: marquee-left 60s linear infinite;
+}
+.animate-marquee-right {
+    animation: marquee-right 60s linear infinite;
+}
+
+.marquee-row {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.marquee-row.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.marquee-row:nth-child(2) {
+    transition-delay: 0.2s;
+}
+</style>
+
+<script>
+const rowObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.marquee-row').forEach(row => rowObserver.observe(row));
+</script>
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const cards = entry.target.querySelectorAll('.service-card');
+            cards.forEach((card, i) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, i * 50);
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+const servicesSection = document.querySelector('.section-full.bg-white');
+if (servicesSection) observer.observe(servicesSection);
+</script>
+</section>
+
+<!-- QUALITY SHOWCASE SECTION -->
+<section class="section-full py-32 overflow-hidden relative" style="background: #0A0A0A;">
+
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-white/3 blur-3xl pointer-events-none"></div>
+
+    <div class="mx-auto max-w-7xl px-6 relative z-10">
+
+        <!-- Header -->
+        <div class="text-center mb-20 quality-header quality-fade-in">
+            <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted mb-4">OUR PROCESS</p>
+            <h2 class="font-heading text-4xl font-bold text-white uppercase md:text-6xl mb-6">
+                Crafted With<br/><span class="text-white/30">Obsessive</span> Precision
+            </h2>
+            <p class="font-body text-base text-muted max-w-2xl mx-auto">
+                Every character, every frame, every detail — built from the ground up with intention. 
+                Watch how a blank canvas transforms into a fully realized 3D masterpiece.
+            </p>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left: Image Showcase -->
+            <!-- Left: Image Showcase -->
+                <div class="relative quality-left quality-fade-left">
+
+                <!-- Main image display -->
+                <div class="relative rounded-3xl overflow-hidden border border-white/10" style="aspect-ratio:1/1; background: transparent; min-height: 600px;">
+                    <img id="quality-img" src="../assets/website files/1.png" alt="Character Build" 
+                        class="w-full h-full object-contain transition-opacity duration-500" style="opacity:1;" />
+
+                    <!-- Step counter badge -->
+                    <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
+                        <span id="step-counter" class="font-mono text-xs text-white tracking-widest">01 / 09</span>
+                    </div>
+
+                    <!-- Progress bar -->
+                    <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-white/10">
+                        <div id="progress-bar" class="h-full transition-all duration-500" style="width: 11%; background: linear-gradient(to right, #ffffff, #555555);"></div>
+                    </div>
+                </div>
+
+                <!-- Simple prev/next arrows -->
+                <div class="flex items-center justify-center gap-6 mt-6">
+                    <button onclick="changeStep(-1)" class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:border-white hover:bg-white hover:text-black text-lg">←</button>
+                    <div class="flex gap-1.5">
+                        <div id="pip-0" class="h-1.5 w-6 rounded-full bg-white transition-all duration-300"></div>
+                        <div id="pip-1" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                        <div id="pip-2" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                        <div id="pip-3" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                        <div id="pip-4" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                        <div id="pip-5" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                        <div id="pip-6" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                        <div id="pip-7" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                        <div id="pip-8" class="h-1.5 w-1.5 rounded-full bg-white/30 transition-all duration-300"></div>
+                    </div>
+                    <button onclick="changeStep(1)" class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:border-white hover:bg-white hover:text-black text-lg">→</button>
+                </div>
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="quality-right quality-fade-right">
+                <div class="space-y-6">
+
+                    <div class="quality-card flex gap-5 items-start p-6 rounded-2xl border border-white/5 bg-white/3 transition-all duration-300 hover:border-white/15">
+                        <span class="text-3xl">🧱</span>
+                        <div>
+                            <h3 class="font-heading text-lg font-bold text-white uppercase mb-2">Base Mesh & Sculpting</h3>
+                            <p class="font-body text-sm text-muted leading-relaxed">Every model starts with a clean base mesh, carefully sculpted to define the character's proportions, personality, and structure before any detail work begins.</p>
+                        </div>
+                    </div>
+
+                    <div class="quality-card flex gap-5 items-start p-6 rounded-2xl border border-white/5 bg-white/3 transition-all duration-300 hover:border-white/15">
+                        <span class="text-3xl">🎨</span>
+                        <div>
+                            <h3 class="font-heading text-lg font-bold text-white uppercase mb-2">Texturing & Shading</h3>
+                            <p class="font-body text-sm text-muted leading-relaxed">Hand-crafted textures bring each character to life — skin, fabric, materials — all painted with precision to achieve cinematic visual quality.</p>
+                        </div>
+                    </div>
+
+                    <div class="quality-card flex gap-5 items-start p-6 rounded-2xl border border-white/5 bg-white/3 transition-all duration-300 hover:border-white/15">
+                        <span class="text-3xl">💡</span>
+                        <div>
+                            <h3 class="font-heading text-lg font-bold text-white uppercase mb-2">Lighting & Final Render</h3>
+                            <p class="font-body text-sm text-muted leading-relaxed">The final stage brings everything together — professional lighting setups and render settings that make every frame look polished, vivid, and production-ready.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-10">
+                    <a href="/contact-us/" class="cta-button cta-button-filled">START YOUR PROJECT <span class="text-base">+</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+.quality-fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.quality-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.quality-fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.quality-fade-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.quality-fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.quality-fade-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+</style>
+
+<script>
+const qualityObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const header = entry.target.querySelector('.quality-header');
+            const left = entry.target.querySelector('.quality-left');
+            const right = entry.target.querySelector('.quality-right');
+            const cards = entry.target.querySelectorAll('.quality-card');
+
+            if (header) setTimeout(() => header.classList.add('visible'), 0);
+            if (left) setTimeout(() => left.classList.add('visible'), 200);
+            if (right) setTimeout(() => right.classList.add('visible'), 400);
+            cards.forEach((card, i) => setTimeout(() => card.classList.add('visible'), 400 + i * 150));
+
+            qualityObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+const qualitySection = document.querySelector('.section-full[style*="0A0A0A"]');
+if (qualitySection) qualityObserver.observe(qualitySection);
+</script>
+
+</section>
+
+<script>
+let currentStep = 0;
+const totalSteps = 9;
+
+function goToStep(index) {
+    const img = document.getElementById('quality-img');
+    const counter = document.getElementById('step-counter');
+    const bar = document.getElementById('progress-bar');
+
+    img.style.opacity = '0';
+    setTimeout(() => {
+        currentStep = index;
+        img.src = `../assets/website files/${index + 1}.png`;
+        img.style.opacity = '1';
+    }, 250);
+
+    counter.textContent = `0${index + 1}`.slice(-2) + ' / 09';
+    bar.style.width = `${((index + 1) / totalSteps) * 100}%`;
+
+    for (let i = 0; i < totalSteps; i++) {
+        const pip = document.getElementById(`pip-${i}`);
+        if (i === index) {
+            pip.style.width = '1.5rem';
+            pip.style.background = 'linear-gradient(to right, white, #7b00ff)';
+            pip.style.opacity = '1';
+        } else {
+            pip.style.width = '0.375rem';
+            pip.style.background = 'rgba(255,255,255,0.3)';
+        }
+    }
+}
+
+function changeStep(dir) {
+    const next = (currentStep + dir + totalSteps) % totalSteps;
+    goToStep(next);
+}
+
+setInterval(() => changeStep(1), 2500);
+</script>
+<!-- ABOUT US BAG SECTION -->
+<section class="section-full bg-black py-32 overflow-hidden relative">
+
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white/3 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/3 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+        <div class="absolute top-1/2 left-1/2 w-px h-full bg-white/5 -translate-x-1/2"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+            <div class="relative flex items-center justify-center order-2 lg:order-1" data-animate>
+                <div class="absolute w-[500px] h-[500px] rounded-full border border-white/5 animate-spin" style="animation-duration: 20s;"></div>
+                <div class="absolute w-[400px] h-[400px] rounded-full border border-white/5 animate-spin" style="animation-duration: 15s; animation-direction: reverse;"></div>
+                <div id="bag-glow" class="absolute w-80 h-80 rounded-full blur-3xl transition-all duration-1000" style="background: rgba(255,192,203,0.15);"></div>
+                <div class="relative z-10 w-full max-w-2xl">
+                    <img id="bag-pink" src="../assets/website files/pink.png" alt="Pink Bag" class="w-full bag-img transition-opacity duration-1000" style="opacity:1;" />
+                    <img id="bag-black" src="../assets/website files/black.png" alt="Black Bag" class="w-full bag-img transition-opacity duration-1000 absolute inset-0" style="opacity:0;" />
+                    <img id="bag-blue" src="../assets/website files/blue.png" alt="Blue Bag" class="w-full bag-img transition-opacity duration-1000 absolute inset-0" style="opacity:0;" />
+                    <img id="bag-orig" src="../assets/website files/bag.png" alt="Original Bag" class="w-full bag-img transition-opacity duration-1000 absolute inset-0" style="opacity:0;" />
+                </div>
+                <div class="absolute bottom-0 flex gap-3">
+                    <div id="dot-0" class="w-3 h-3 rounded-full bg-pink-300 border-2 border-white/30 transition-all duration-300 scale-125"></div>
+                    <div id="dot-1" class="w-3 h-3 rounded-full bg-gray-800 border-2 border-white/30 transition-all duration-300"></div>
+                    <div id="dot-2" class="w-3 h-3 rounded-full bg-blue-400 border-2 border-white/30 transition-all duration-300"></div>
+                    <div id="dot-3" class="w-3 h-3 rounded-full bg-amber-200 border-2 border-white/30 transition-all duration-300"></div>
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2" data-animate>
+                <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted mb-6">WHO WE ARE</p>
+                <h2 class="font-heading text-3xl font-bold text-white uppercase leading-none mb-8 md:text-5xl">
+                    <span id="shine-title" class="relative inline-block cursor-default select-none transition-transform duration-300">
+                        We Bring Your Ideas To  Reality
+                    </span>
+                </h2>
+                <script>
+                const title = document.getElementById('shine-title');
+                title.addEventListener('mouseenter', () => {
+                    title.style.transform = 'scale(1.04)';
+                    title.style.textShadow = '0 0 30px rgba(255,255,255,0.6), 0 0 60px rgba(255,255,255,0.3)';
+                });
+                title.addEventListener('mouseleave', () => {
+                    title.style.transform = 'scale(1)';
+                    title.style.textShadow = 'none';
+                });
+                </script>
+                <div class="w-16 h-px bg-white/30 mb-8"></div>
+                <p class="font-body text-base leading-relaxed text-muted mb-5">
+                    ZLENDER is a creative 3D studio built on one belief — great ideas deserve great execution. We specialize in bringing visions to life through high-quality 3D Animation and 3D Modeling.
+                </p>
+                <p class="font-body text-base leading-relaxed text-muted mb-10">
+                    From character design to cinematic storytelling, every project is treated with the same level of craft and passion. We're not just a studio — we're your creative partner from concept to delivery.
+                </p>
+                <div class="grid grid-cols-3 gap-4 mb-10">
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                        <p class="font-heading text-2xl font-bold text-white">200+</p>
+                        <p class="font-body text-[10px] text-muted uppercase tracking-wider mt-1">Projects</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                        <p class="font-heading text-2xl font-bold text-white">5.0 ★</p>
+                        <p class="font-body text-[10px] text-muted uppercase tracking-wider mt-1">Rating</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                        <p class="font-heading text-2xl font-bold text-white">100%</p>
+                        <p class="font-body text-[10px] text-muted uppercase tracking-wider mt-1">Completion</p>
+                    </div>
+                </div>
+                <a href="/contact-us/" class="cta-button cta-button-filled">REQUEST A QUOTE <span class="text-base">+</span></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+const bags = ['bag-pink', 'bag-black', 'bag-blue', 'bag-orig'];
+const dots = ['dot-0', 'dot-1', 'dot-2', 'dot-3'];
+const glows = [
+    'rgba(255,192,203,0.15)',
+    'rgba(100,100,100,0.15)',
+    'rgba(100,149,237,0.15)',
+    'rgba(255,220,150,0.15)'
+];
+let bagIndex = 0;
+setInterval(() => {
+    bags.forEach(id => document.getElementById(id).style.opacity = '0');
+    dots.forEach(id => document.getElementById(id).style.transform = 'scale(1)');
+    bagIndex = (bagIndex + 1) % bags.length;
+    document.getElementById(bags[bagIndex]).style.opacity = '1';
+    document.getElementById(dots[bagIndex]).style.transform = 'scale(1.4)';
+    document.getElementById('bag-glow').style.background = glows[bagIndex];
+}, 1500);
+</script>
+<!-- TESTIMONIALS SECTION --><!-- TESTIMONIALS SECTION --><!-- TESTIMONIALS SECTION --><!-- TESTIMONIALS SECTION -->
+ <!-- TESTIMONIALS SECTION --><!-- TESTIMONIALS SECTION --><!-- TESTIMONIALS SECTION --><!-- TESTIMONIALS SECTION -->
+
+
+
+ 
+<!-- LOGO FLICKER SECTION -->
+<section class="section-full overflow-hidden relative" style="background: #ffffff; height: 600px;" id="flicker-section">
+    
+    <!-- Black cursor circle -->
+    <div id="cursor-circle" style="
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        background: black;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        z-index: 2;
+    "></div>
+
+    <!-- Black logo (default) -->
+    <div class="absolute inset-0 flex items-center justify-center" style="z-index: 1;">
+        <img id="flicker-logo" src="../assets/website files/blacklogo.png" alt="ZLENDER" 
+            class="w-[512px] md:w-[1000px] h-auto" style="opacity:0; position: relative; z-index: 1;" />
+    </div>
+
+    <!-- White logo (revealed by circle) -->
+    <div class="absolute inset-0 flex items-center justify-center" style="z-index: 3; pointer-events: none;">
+        <img id="white-logo" src="../assets/website files/whitelogo.png" alt="ZLENDER" 
+           class="w-[512px] md:w-[1000px] h-auto" style="
+                opacity: 0;
+                position: relative;
+                clip-path: circle(0px at 50% 50%);
+                transition: clip-path 0s;
+            " />
+    </div>
+
+</section>
+
+<style>
+@keyframes flicker {
+    0%   { opacity: 1; }
+    3%   { opacity: 0.2; }
+    5%   { opacity: 1; }
+    8%   { opacity: 0.4; }
+    10%  { opacity: 1; }
+    55%  { opacity: 1; }
+    57%  { opacity: 0.1; }
+    59%  { opacity: 1; }
+    61%  { opacity: 0.3; }
+    63%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes logo-entrance {
+    0%   { 
+        opacity: 0; 
+        transform: scale(0.85);
+        filter: blur(12px) brightness(3);
+    }
+    40%  { 
+        opacity: 1; 
+        transform: scale(1.03);
+        filter: blur(0px) brightness(1.8);
+    }
+    70%  { 
+        transform: scale(0.98);
+        filter: brightness(1.2);
+    }
+    100% { 
+        opacity: 1;
+        transform: scale(1);
+        filter: brightness(1);
+    }
+}
+
+#flicker-logo.entered {
+    animation: logo-entrance 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+               flicker 4s linear 1.5s infinite;
+}
+</style>
+
+<script>
+// Entrance animation on scroll
+const flickerSection = document.getElementById('flicker-section');
+const flickerLogo = document.getElementById('flicker-logo');
+const whiteLogo = document.getElementById('white-logo');
+const cursorCircle = document.getElementById('cursor-circle');
+
+const flickerObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            flickerLogo.classList.add('entered');
+            flickerObs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+
+if (flickerSection) flickerObs.observe(flickerSection);
+
+// Cursor tracking
+flickerSection.addEventListener('mouseenter', () => {
+    cursorCircle.style.opacity = '1';
+    whiteLogo.style.opacity = '1';
+});
+
+flickerSection.addEventListener('mouseleave', () => {
+    cursorCircle.style.opacity = '0';
+    whiteLogo.style.opacity = '0';
+    whiteLogo.style.clipPath = 'circle(0px at 50% 50%)';
+});
+
+flickerSection.addEventListener('mousemove', (e) => {
+    const rect = flickerSection.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    // Move black circle
+    cursorCircle.style.left = x + 'px';
+    cursorCircle.style.top = y + 'px';
+
+    // Get logo position relative to section
+    const logoRect = flickerLogo.getBoundingClientRect();
+    const logoX = logoRect.left - rect.left;
+    const logoY = logoRect.top - rect.top;
+
+    // Clip the white logo at cursor position relative to the logo
+    const clipX = x - logoX;
+    const clipY = y - logoY;
+
+    whiteLogo.style.clipPath = `circle(180px at ${clipX}px ${clipY}px)`;
+});
+</script>
+
+
+
+
+
+<!-- WHY CHOOSE SECTION -->
+<section class="section-full py-32 overflow-hidden relative" style="background: #0A0A0A;">
+
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-0 left-0 w-[600px] h-[600px] rounded-full blur-3xl opacity-30" style="background: radial-gradient(circle, rgba(255,255,255,0.04), transparent);"></div>
+        <div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full blur-3xl opacity-20" style="background: radial-gradient(circle, rgba(255,255,255,0.03), transparent);"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 relative z-10">
+
+        <!-- Header -->
+        <div class="text-center mb-20">
+            <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted mb-4">THE ZLENDER DIFFERENCE</p>
+            <h2 class="font-heading text-4xl font-bold text-white uppercase md:text-6xl mb-6">
+                Why Clients Choose <span class="text-white/30">Us</span>
+            </h2>
+            <div class="w-16 h-px bg-white/20 mx-auto"></div>
+        </div>
+
+        <!-- Top: Big logo + first reason side by side -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-4 rounded-3xl overflow-hidden border border-white/8">
+
+            <!-- Logo panel -->
+            <div class="flex items-center justify-center p-16" style="background: #111111;">
+                <img src="../assets/website files/Zlogoblack.png" alt="ZLENDER"
+                    class="w-48 md:w-72 h-auto" draggable="false"
+                    style="filter: invert(1);" />
+            </div>
+
+            <!-- Reason 1 -->
+            <div class="flex flex-col justify-center p-12" style="background: #161616;">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                        <span class="font-heading text-black text-sm font-bold">01</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white uppercase">Expert Creative Team</h3>
+                </div>
+                <p style="font-family: 'Georgia', serif; font-size: 0.95rem; color: rgba(255,255,255,0.55); line-height: 1.8;">
+                    A dedicated team of 3D artists, animators, riggers, and storytellers — all working together to deliver production-quality results on every single project, every single time.
                 </p>
             </div>
         </div>
-    </section>
 
-    <!-- 3D MODELING SERVICES -->
-    <section class="section-full border-t border-white/5 bg-[#0A0A0A] py-24">
-        <div class="mx-auto max-w-5xl px-6">
-            <h2 class="mb-12 font-heading text-3xl font-bold tracking-widest text-white uppercase md:text-5xl"
-                data-animate>3D MODELING AND DESIGN SERVICES</h2>
-            <div class="grid grid-cols-1 gap-x-12 gap-y-6 md:grid-cols-2">
-                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
-                    data-animate>
-                    <p class="font-body text-sm font-medium text-white">Character creation</p>
+        <!-- Middle row: 2 reasons side by side -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+
+            <!-- Reason 2 -->
+            <div class="flex flex-col justify-center p-10 rounded-3xl border border-white/8" style="background: #161616;">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                        <span class="font-heading text-black text-sm font-bold">02</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white uppercase">100% Custom Work</h3>
                 </div>
-                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
-                    data-animate>
-                    <p class="font-body text-sm font-medium text-white">Realistic Product</p>
+                <p style="font-family: 'Georgia', serif; font-size: 0.95rem; color: rgba(255,255,255,0.55); line-height: 1.8;">
+                    No templates, no shortcuts. From character design to final render, everything is built from scratch to match your exact vision and brand.
+                </p>
+            </div>
+
+            <!-- Reason 3 -->
+            <div class="flex flex-col justify-center p-10 rounded-3xl border border-white/8" style="background: #161616;">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                        <span class="font-heading text-black text-sm font-bold">03</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white uppercase">Proven Track Record</h3>
                 </div>
-                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
-                    data-animate>
-                    <p class="font-body text-sm font-medium text-white">Animatable Character</p>
+                <p style="font-family: 'Georgia', serif; font-size: 0.95rem; color: rgba(255,255,255,0.55); line-height: 1.8;">
+                    Over 200 completed projects and a perfect 5.0 rating across all platforms. Clients worldwide trust us to deliver — and we never disappoint.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom: wide reason + CTA -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+            <!-- Reason 4 wide -->
+            <div class="lg:col-span-2 flex flex-col justify-center p-10 rounded-3xl border border-white/8" style="background: #161616;">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                        <span class="font-heading text-black text-sm font-bold">04</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white uppercase">We Deliver Experiences</h3>
                 </div>
-                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
-                    data-animate>
-                    <p class="font-body text-sm font-medium text-white">3D Printable Models</p>
+                <p style="font-family: 'Georgia', serif; font-size: 0.95rem; color: rgba(255,255,255,0.55); line-height: 1.8;">
+                    We don't just deliver files — we deliver cinematic, compelling stories designed to captivate your audience and leave a lasting impression that drives real results for your brand.
+                </p>
+            </div>
+
+            <!-- CTA panel -->
+            <div class="flex flex-col items-center justify-center p-10 rounded-3xl text-center" style="background: #ffffff;">
+                <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-black/50 mb-3">Ready to start?</p>
+                <h3 class="font-heading text-2xl font-bold text-black uppercase mb-6">Let's Build Something Great</h3>
+                <a href="/contact-us/" class="inline-flex items-center gap-2 rounded-full bg-black text-white px-6 py-3 font-body text-sm font-medium uppercase tracking-wider transition hover:bg-black/80">
+                    REQUEST A QUOTE <span>+</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+.why-box {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.why-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+<script>
+const whyBoxes = document.querySelectorAll('.why-box');
+const whyObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            whyObs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+whyBoxes.forEach(box => whyObs.observe(box));
+</script>
+
+
+</section>
+
+<!-- BUSINESS IMPACT SECTION -->
+<section class="section-full py-24 overflow-hidden relative" style="background: #0A0A0A;" id="impact-section">
+
+    <div class="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl pointer-events-none" style="background: rgba(123,0,255,0.05);"></div>
+
+    <div class="mx-auto max-w-7xl px-6 relative z-10">
+
+        <!-- Header -->
+        <div class="text-center mb-20 impact-header" style="opacity:0; transform: translateY(30px); transition: all 0.9s ease;">
+            <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted mb-4">THE NUMBERS DON'T LIE</p>
+            <h2 class="font-heading text-4xl font-bold text-white uppercase md:text-6xl mb-6">
+                What Working With Us<br/><span class="text-white/30">Does For Your Business</span>
+            </h2>
+            <p class="font-body text-base text-muted max-w-2xl mx-auto">
+                Brands that invest in high-quality 3D animation and visual content consistently outperform those that don't. Here's what the data shows.
+            </p>
+        </div>
+
+        <!-- Top Stats Row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 impact-stats" style="opacity:0; transform: translateY(30px); transition: all 0.9s ease 0.2s;">
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-6 text-center">
+                <p class="font-heading text-5xl font-bold text-white mb-2" id="stat-1">0%</p>
+                <p class="font-body text-xs text-muted uppercase tracking-wider">Increase in audience engagement with 3D animated content</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-6 text-center">
+                <p class="font-heading text-5xl font-bold text-white mb-2" id="stat-2">0%</p>
+                <p class="font-body text-xs text-muted uppercase tracking-wider">Higher conversion rate with product animation vs static images</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-6 text-center">
+                <p class="font-heading text-5xl font-bold text-white mb-2" id="stat-3">0%</p>
+                <p class="font-body text-xs text-muted uppercase tracking-wider">Of consumers say video helps them make purchasing decisions</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-6 text-center">
+                <p class="font-heading text-5xl font-bold text-white mb-2" id="stat-4">0x</p>
+                <p class="font-body text-xs text-muted uppercase tracking-wider">More shares on social media for video content vs text posts</p>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+
+            <!-- Bar Chart: Engagement by Content Type -->
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-8 impact-card" style="opacity:0; transform: translateX(-40px); transition: all 0.9s ease 0.3s;">
+                <h3 class="font-heading text-lg font-bold text-white uppercase mb-2">Audience Engagement by Content Type</h3>
+                <p class="font-body text-xs text-muted mb-8">Average engagement rate across social platforms</p>
+                <div class="space-y-5" id="bar-chart">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">3D Animation Video</span>
+                            <span class="font-body text-xs text-white font-bold">87%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease;" data-width="87%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">2D Explainer Video</span>
+                            <span class="font-body text-xs text-white font-bold">64%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 0.3s;" data-width="64%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Product Photography</span>
+                            <span class="font-body text-xs text-white font-bold">41%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 0.6s;" data-width="41%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Static Image Post</span>
+                            <span class="font-body text-xs text-white font-bold">28%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 0.9s;" data-width="28%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Text Only Post</span>
+                            <span class="font-body text-xs text-white font-bold">12%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 1.2s;" data-width="12%"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
-                    data-animate>
-                    <p class="font-body text-sm font-medium text-white">Environment & Map Design</p>
-                </div>
-                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
-                    data-animate>
-                    <p class="font-body text-sm font-medium text-white">Weapons, props & objects assets</p>
-                </div>
-                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
-                    data-animate>
-                    <p class="font-body text-sm font-medium text-white">Sculpture Design</p>
+            </div>
+
+            <!-- Bar Chart: ROI -->
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-8 impact-card" style="opacity:0; transform: translateX(40px); transition: all 0.9s ease 0.4s;">
+                <h3 class="font-heading text-lg font-bold text-white uppercase mb-2">Average ROI After Video Investment</h3>
+                <p class="font-body text-xs text-muted mb-8">Return on investment reported by businesses after 6 months</p>
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Brand Awareness</span>
+                            <span class="font-body text-xs text-white font-bold">+320%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease;" data-width="92%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Website Traffic</span>
+                            <span class="font-body text-xs text-white font-bold">+218%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 0.3s;" data-width="74%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Lead Generation</span>
+                            <span class="font-body text-xs text-white font-bold">+165%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 0.6s;" data-width="60%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Sales Conversion</span>
+                            <span class="font-body text-xs text-white font-bold">+94%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 0.9s;" data-width="45%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-body text-xs text-white/70">Customer Retention</span>
+                            <span class="font-body text-xs text-white font-bold">+78%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="bar-fill h-full rounded-full" style="width:0%; background: linear-gradient(to right, #ffffff, #555555); transition: width 3s ease 1.2s;" data-width="38%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- TESTIMONIAL -->
-    <section class="section bg-surface">
-        <div class="mx-auto max-w-3xl rounded-3xl border border-border bg-card p-8 md:p-12" data-animate>
-            <p class="mb-6 font-body text-base italic leading-relaxed text-white/90 md:text-lg">
-                "Huge shoutout to zlender for crafting the hand tossing animation—it's smooth, immersive, and perfectly
-                timed. The motion feels natural, the loop logic is flawless, and it adds a cinematic touch that elevates
-                the entire gameplay experience. He nailed the physics, easing, and thematic vibe with precision. This
-                isn't just animation—it's emotional polish. If you need motion that resonates, zlender delivers. Team
-                move FAST!! Thanks Jawad B"
-            </p>
-            <p class="font-heading text-sm font-bold text-muted uppercase">— Darius F</p>
+        <!-- Bottom Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 impact-bottom" style="opacity:0; transform: translateY(30px); transition: all 0.9s ease 0.5s;">
+
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-8">
+                <div class="text-4xl mb-4">🎯</div>
+                <h3 class="font-heading text-lg font-bold text-white uppercase mb-3">Faster Brand Recognition</h3>
+                <p style="font-family: 'Georgia', serif; font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.7;">
+                    Consumers recognize brands using 3D visual content <strong style="color:white;">4x faster</strong> than those using static imagery. Motion and depth create lasting memory anchors that keep your brand top of mind.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-8">
+                <div class="text-4xl mb-4">📈</div>
+                <h3 class="font-heading text-lg font-bold text-white uppercase mb-3">Higher Social Reach</h3>
+                <p style="font-family: 'Georgia', serif; font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.7;">
+                    Video content receives <strong style="color:white;">1200% more shares</strong> than text and image combined. A single well-produced animation can reach audiences that would otherwise take months to build organically.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/3 p-8">
+                <div class="text-4xl mb-4">💰</div>
+                <h3 class="font-heading text-lg font-bold text-white uppercase mb-3">Proven Sales Impact</h3>
+                <p style="font-family: 'Georgia', serif; font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.7;">
+                    Products with 3D animated demos see an average <strong style="color:white;">40% increase in purchase intent</strong>. Buyers who understand your product visually are significantly more likely to convert and less likely to return.
+                </p>
+            </div>
+
         </div>
-    </section>
 
-    <!-- CONTACT FORM -->
-    <section class="section bg-card">
-        <div class="mx-auto max-w-2xl">
-            <h2 class="mb-2 text-center font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>
-                REQUEST A PROJECT QUOTE</h2>
-            <p class="mb-10 text-center font-body text-sm text-muted" data-animate>
-                Let's Bring Your Idea to Life. Tell us about your project and goals.
-            </p>
-            <iframe name="hidden_iframe_services" id="hidden_iframe_services" style="display:none;"
-                onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your project quote request has been received.'); this.submitted=false; document.getElementById('services-form').reset(); }"></iframe>
-            <form id="services-form"
-                action="https://docs.google.com/forms/d/e/1FAIpQLSeZA01aOnXrqvzL4pC2diIDxa7UDMcYoc6qvo4DHzyAk2QB1g/formResponse"
-                method="POST" target="hidden_iframe_services"
-                onsubmit="const hp = document.getElementById('confirm_email_services'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('services-form')) { return false; } document.getElementById('hidden_iframe_services').submitted=true;"
-                class="space-y-5" data-animate>
-
-                <!-- BOT HONEYPOT -->
-                <div style="display:none;" aria-hidden="true">
-                    <label for="confirm_email_services">Leave this field empty</label>
-                    <input type="text" id="confirm_email_services" name="confirm_email" tabindex="-1" />
-                </div>
-                <div><label
-                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Name</label>
-                    <input name="entry.1227890993" type="text" required
-                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Full Name" />
-                </div>
-                <div><label
-                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Email</label>
-                    <input name="entry.1316634230" type="email" required
-                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Example@Gmail.com" />
-                </div>
-                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
-                        Title</label>
-                    <input name="entry.1856353974" type="text" required
-                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Project Title" />
-                </div>
-                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
-                        Details</label>
-                    <textarea name="entry.1398881846" rows="5" required
-                        class="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Share Your Project Requirement!"></textarea>
-                </div>
-                <div class="flex items-center gap-3"><input name="newsletter" type="checkbox"
-                        class="h-4 w-4 rounded border-border bg-surface accent-white" /><label
-                        class="font-body text-xs text-muted">Subscribe to Newsletter</label></div>
-                <button type="submit"
-                    class="cta-button cta-button-filled w-full justify-center py-3 text-sm">Submit</button>
-            </form>
+        <!-- CTA -->
+        <div class="text-center mt-16 impact-cta" style="opacity:0; transition: all 0.9s ease 0.6s;">
+            <p class="font-body text-base text-muted mb-6">Ready to see these results for your brand?</p>
+            <a href="/contact-us/" class="cta-button cta-button-filled">START YOUR PROJECT <span class="text-base">+</span></a>
         </div>
-    </section>
+
+    </div>
+</section>
+
+
+<!-- TESTIMONIALS SECTION -->
+<section class="section-full bg-[#0A0A0A] py-24 overflow-hidden relative" id="testimonials-section">
+
+    <div class="mx-auto max-w-7xl px-6 relative z-10">
+
+        <div class="text-center mb-16 testimonial-header" style="opacity:0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease;">
+            <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted mb-4">WHAT CLIENTS SAY</p>
+            <h2 class="font-heading text-4xl font-bold text-white uppercase md:text-5xl">Client Reviews</h2>
+            <div class="flex items-center justify-center gap-2 mt-4">
+                <span class="text-white text-xl">★★★★★</span>
+                <span class="font-body text-sm text-muted ml-2">5.0 · 30+ Verified Reviews</span>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div id="review-track" class="grid grid-cols-1 md:grid-cols-2 gap-6" style="min-height: 640px; align-content: start;"></div>
+
+            <div class="flex items-center justify-center gap-6 mt-10">
+                <button onclick="changeReview(-1)" class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:border-white hover:bg-white hover:text-black text-lg">←</button>
+                <div id="review-dots" class="flex gap-2"></div>
+                <button onclick="changeReview(1)" class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:border-white hover:bg-white hover:text-black text-lg">→</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+@keyframes card-appear {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.review-card {
+    opacity: 0;
+    transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform;
+}
+.review-card.animate {
+    animation: card-appear 0.6s ease forwards;
+}
+.review-card.animate:nth-child(1) { animation-delay: 0.05s; }
+.review-card.animate:nth-child(2) { animation-delay: 0.15s; }
+.review-card.animate:nth-child(3) { animation-delay: 0.25s; }
+.review-card.animate:nth-child(4) { animation-delay: 0.35s; }
+
+#review-track .review-card {
+    transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+}
+#review-track:has(.review-card:hover) .review-card:not(:hover) {
+    opacity: 0.45;
+    transform: scale(0.96) !important;
+}
+#review-track .review-card:hover {
+    transform: scale(1.06) !important;
+    filter: blur(0px) !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 10;
+}
+</style>
+
+<script>
+const reviewData = [
+    { name: "Andrew F.", flag: "https://flagcdn.com/w40/us.png", location: "Medford, United States", review: "ZLENDER was very easy to work with and to communicate with. This was our first project on Freelancer and they made it so easy, delivering a high quality product that was exactly what we were looking for. Definitely would work with them again!" },
+    { name: "Warren B.", flag: "https://flagcdn.com/w40/us.png", location: "San Antonio, United States", review: "ZLENDER was very professional and easy to work with. They were very prompt with communications and patient with all the changes we wanted to make. Would definitely recommend their services and will use them again in the future." },
+    { name: "Alex S.", flag: "https://flagcdn.com/w40/gb.png", location: "London, United Kingdom", review: "Very friendly team, very efficient and did a great job! Thank you!" },
+    { name: "Michael G.", flag: "https://flagcdn.com/w40/us.png", location: "Forest Lake, United States", review: "Very fast and great job!" },
+    { name: "Derek L.", flag: "https://flagcdn.com/w40/us.png", location: "Woolwich, United States", review: "Really good and got our work done in a few hours and did it perfectly." },
+    { name: "Nebuzora S.", flag: "https://flagcdn.com/w40/in.png", location: "Bengaluru, India", review: "Working with ZLENDER was genuinely a great experience. They understood our requirements quickly and delivered exactly what we had in mind. Their professionalism, attention to detail, and collaborative approach made the entire process smooth and stress-free. Highly recommended!" },
+    { name: "Serena L.", flag: "https://flagcdn.com/w40/ae.png", location: "Abu Dhabi, UAE", review: "Great to work with." },
+    { name: "Former Client", flag: "https://flagcdn.com/w40/un.png", location: "International", review: "We're enjoying working with ZLENDER. They're very nice and professional. We look forward to creating our next project together." },
+    { name: "Nicky S.", flag: "https://flagcdn.com/w40/dk.png", location: "Ålsgårde, Denmark", review: "ZLENDER made such a beautiful project for us. Our customer was totally unreasonable with reviews but ZLENDER and their team were so patient and delivered a wild result. Thank you so much!" },
+    { name: "Hussam A.", flag: "https://flagcdn.com/w40/sa.png", location: "Riyadh, Saudi Arabia", review: "Great job — ZLENDER was able to understand and research the requirements further to deliver the intended results." },
+    { name: "Vishesh D.", flag: "https://flagcdn.com/w40/in.png", location: "New Delhi, India", review: "Great team to work with. They have great design knowledge and execution. Will collaborate with them in the future too." },
+    { name: "Diego S.", flag: "https://flagcdn.com/w40/fr.png", location: "La Courneuve, France", review: "Very kind team and excellent professionals. They gave great attention and guided us through everything we needed. Highly recommended!" },
+    { name: "David N.", flag: "https://flagcdn.com/w40/us.png", location: "Thornton, United States", review: "Awesome to work with!" },
+    { name: "David N.", flag: "https://flagcdn.com/w40/us.png", location: "Thornton, United States", review: "Great to work with. Asked lots of good questions. Delivered what we needed." },
+    { name: "Darius F.", flag: "https://flagcdn.com/w40/us.png", location: "Springfield, United States", review: "Huge shoutout to ZLENDER for crafting this animation — it's smooth, immersive, and perfectly timed. The motion feels natural, the loop logic is flawless, and it adds a cinematic touch that elevates the entire gameplay experience. This isn't just animation — it's emotional polish. The team moves FAST!!" },
+    { name: "J. Client", flag: "https://flagcdn.com/w40/un.png", location: "International", review: "Incredibly talented and detail-oriented! They brought our vision to life with creativity, professionalism, and quick turnaround. Every design felt unique and perfectly aligned with our brand. Highly recommended!" },
+    { name: "Mario A. V.", flag: "https://flagcdn.com/w40/sv.png", location: "El Salvador", review: "Their work is spectacular! Highly recommended on Freelancer." },
+    { name: "Edison B.", flag: "https://flagcdn.com/w40/br.png", location: "São Paulo, Brazil", review: "Very easy to understand our needs." },
+    { name: "Tirthankar H.", flag: "https://flagcdn.com/w40/bd.png", location: "Kolkata, Bangladesh", review: "Nice team and very helpful." },
+    { name: "Evie M.", flag: "https://flagcdn.com/w40/gb.png", location: "United Kingdom", review: "ZLENDER is very talented — they completed a 3D model for us in less than 24 hours and were communicative at every step. Excited to work more with them!" },
+    { name: "Hussam A.", flag: "https://flagcdn.com/w40/sa.png", location: "Riyadh, Saudi Arabia", review: "Very professional and courteous team. Looking forward to more projects with them." },
+    { name: "Yonela K.", flag: "https://flagcdn.com/w40/za.png", location: "Durban, South Africa", review: "ZLENDER is an interesting team to work with, doesn't get bored easily. We're looking forward to working with them again. Thank you!" },
+    { name: "Tom N.", flag: "https://flagcdn.com/w40/gb.png", location: "Leicester, United Kingdom", review: "Excellent work from ZLENDER — delivered exactly as promised! If not better! Thank you again, until the next project!" },
+    { name: "Eric D.", flag: "https://flagcdn.com/w40/ie.png", location: "Ireland", review: "Great job, good communication." },
+    { name: "Suleman M.", flag: "https://flagcdn.com/w40/se.png", location: "Norrköping, Sweden", review: "Working with them again was a great choice. They delivered the job on time and the quality was very good. ZLENDER is talented and trustworthy and their work ethics are amazing." },
+    { name: "Mario A. V.", flag: "https://flagcdn.com/w40/sv.png", location: "El Salvador", review: "Thankful for a job well done. 5 stars and recommended." },
+    { name: "Suleman M.", flag: "https://flagcdn.com/w40/se.png", location: "Norrköping, Sweden", review: "This project was very good and the results were pleasing. ZLENDER is a really generous team. They helped with every detail and didn't hesitate to give extra designs and adjustments. Working with them was a pleasure and it will not be the last time!" },
+    { name: "B. Client", flag: "https://flagcdn.com/w40/un.png", location: "International", review: "Honest feedback: ZLENDER is truly amazing at video creation and animation. They surpassed even the reference quality given, made changes without charging extra, and delivered on time. Highly recommend." },
+    { name: "Edison B.", flag: "https://flagcdn.com/w40/br.png", location: "São Paulo, Brazil", review: "Excellent sensibility in understanding exactly what we desired." },
+    { name: "Gottlob K.", flag: "https://flagcdn.com/w40/de.png", location: "Stuttgart, Germany", review: "Very good job. It's the third time we worked together and for sure not the last time." },
+    { name: "Christian N.", flag: "https://flagcdn.com/w40/us.png", location: "Miami, United States", review: "Some minor confusion in the beginning which was our fault. As progress continued, we were both on the same page with rapid results. Model turned out great. Would hire again." },
+    { name: "Daniel A.", flag: "https://flagcdn.com/w40/ng.png", location: "Osogbo, Nigeria", review: "Delivered an awesome video again. Thanks!" },
+];
+
+const reviewPerPage = 4;
+const reviewTotalPages = Math.ceil(reviewData.length / reviewPerPage);
+let reviewCurrentPage = 0;
+
+function triggerReviewAnimations() {
+    document.querySelectorAll('.review-card').forEach(card => {
+        card.classList.remove('animate');
+        void card.offsetWidth;
+        card.classList.add('animate');
+    });
+}
+
+function renderReviews() {
+    const track = document.getElementById('review-track');
+    const start = reviewCurrentPage * reviewPerPage;
+    const page = reviewData.slice(start, start + reviewPerPage);
+
+    track.innerHTML = page.map(r => `
+        <div class="review-card rounded-2xl border border-white/10 bg-white/3 p-7 flex flex-col gap-4">
+            <div class="text-white text-lg">★★★★★</div>
+            <p style="font-family: 'Georgia', serif; font-size: 1rem; line-height: 1.8; color: rgba(255,255,255,0.85); font-style: italic; flex: 1;">"${r.review}"</p>
+            <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+                <img src="${r.flag}" alt="flag" class="h-5 w-7 object-cover rounded-sm flex-shrink-0" />
+                <div>
+                    <p class="font-heading text-sm font-bold text-white uppercase">${r.name}</p>
+                    <p class="font-body text-xs text-muted">${r.location}</p>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    const dotsEl = document.getElementById('review-dots');
+    dotsEl.innerHTML = '';
+    for (let i = 0; i < reviewTotalPages; i++) {
+        const dot = document.createElement('div');
+        dot.className = `h-1.5 rounded-full transition-all duration-300 cursor-pointer ${i === reviewCurrentPage ? 'w-6 bg-white' : 'w-1.5 bg-white/30'}`;
+        dot.onclick = () => { reviewCurrentPage = i; renderReviews(); };
+        dotsEl.appendChild(dot);
+    }
+
+    setTimeout(triggerReviewAnimations, 50);
+}
+
+function changeReview(dir) {
+    reviewCurrentPage = (reviewCurrentPage + dir + reviewTotalPages) % reviewTotalPages;
+    renderReviews();
+}
+
+const testimonialSection = document.getElementById('testimonials-section');
+const testimonialHeader = document.querySelector('.testimonial-header');
+
+const testimonialObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            testimonialHeader.style.opacity = '1';
+            testimonialHeader.style.transform = 'translateY(0)';
+            renderReviews();
+            testimonialObs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+if (testimonialSection) testimonialObs.observe(testimonialSection);
+</script>
+
+
+
+
+<script>
+const impactSection = document.getElementById('impact-section');
+
+const impactObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+
+            // Animate header
+            impactSection.querySelector('.impact-header').style.opacity = '1';
+            impactSection.querySelector('.impact-header').style.transform = 'translateY(0)';
+
+            // Animate stats
+            setTimeout(() => {
+                impactSection.querySelector('.impact-stats').style.opacity = '1';
+                impactSection.querySelector('.impact-stats').style.transform = 'translateY(0)';
+
+                // Count up numbers
+                animateCount('stat-1', 0, 73, '%', 3500);
+animateCount('stat-2', 0, 49, '%', 3500);
+animateCount('stat-3', 0, 96, '%', 3500);
+animateCount('stat-4', 0, 12, 'x', 3500);
+            }, 200);
+
+            // Animate cards
+            setTimeout(() => {
+                impactSection.querySelectorAll('.impact-card').forEach(card => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateX(0)';
+                });
+            }, 300);
+
+            // Animate bars
+            setTimeout(() => {
+                impactSection.querySelectorAll('.bar-fill').forEach(bar => {
+                    bar.style.width = bar.getAttribute('data-width');
+                });
+            }, 500);
+
+            // Animate bottom
+            setTimeout(() => {
+                impactSection.querySelector('.impact-bottom').style.opacity = '1';
+                impactSection.querySelector('.impact-bottom').style.transform = 'translateY(0)';
+                impactSection.querySelector('.impact-cta').style.opacity = '1';
+            }, 600);
+
+            impactObs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+if (impactSection) impactObs.observe(impactSection);
+
+function animateCount(id, from, to, suffix, duration) {
+    const el = document.getElementById(id);
+    const start = performance.now();
+    function update(time) {
+        const progress = Math.min((time - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(from + (to - from) * ease) + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+}
+</script>
+
+
+<!-- CHECKOUT OUR SOCIALS -->
+<section class="py-20 overflow-hidden relative" style="background: #000000;" id="socials-section">
+
+    <!-- Top divider -->
+    <div class="flex items-center gap-6 px-6 mb-16 mx-auto max-w-7xl socials-line" style="opacity:0; transform: scaleX(0.3); transition: opacity 0.8s ease, transform 0.8s ease;">
+        <div class="h-px flex-1 bg-white/10"></div>
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.25em] text-white/30 shrink-0">Find Us Online</p>
+        <div class="h-px flex-1 bg-white/10"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6">
+
+        <h2 class="text-center font-heading text-4xl font-bold text-white uppercase md:text-5xl mb-4 socials-header" style="opacity:0; transform: translateY(30px); transition: opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s;" data-animate>
+            Checkout Our <span class="text-white/30">Socials</span>
+        </h2>
+        <p class="text-center font-body text-sm text-muted mb-14 max-w-xl mx-auto socials-sub" style="opacity:0; transform: translateY(20px); transition: opacity 0.7s ease 0.35s, transform 0.7s ease 0.35s;">
+            Follow us to stay connected, see what we're building, and reach out directly.
+        </p>
+
+        <!-- Cards grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+
+            <a href="https://www.freelancer.com/u/ZlenderShop" target="_blank" rel="noopener"
+                class="socials-card group flex flex-col items-center gap-4 rounded-2xl border border-white/8 p-8 text-center transition-all duration-300 hover:border-white/25 hover:bg-white/5"
+                style="opacity:0; transform: translateY(40px); transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s, border-color 0.3s, background 0.3s;">
+                <img src="../assets/website files/freelancer_logo_icon_171122.png" alt="Freelancer" class="h-12 w-12 object-contain" />
+                <div>
+                    <h3 class="font-heading text-base font-bold text-white uppercase mb-1">Freelancer</h3>
+                    <p class="font-body text-xs text-muted">View our profile →</p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/zlender.studio/" target="_blank" rel="noopener"
+                class="socials-card group flex flex-col items-center gap-4 rounded-2xl border border-white/8 p-8 text-center transition-all duration-300 hover:border-white/25 hover:bg-white/5"
+                style="opacity:0; transform: translateY(40px); transition: opacity 0.6s ease 0.55s, transform 0.6s ease 0.55s, border-color 0.3s, background 0.3s;">
+                <img src="../assets/website files/Instagram_icon.png" alt="Instagram" class="h-12 w-12 object-contain" />
+                <div>
+                    <h3 class="font-heading text-base font-bold text-white uppercase mb-1">Instagram</h3>
+                    <p class="font-body text-xs text-muted">Follow us →</p>
+                </div>
+            </a>
+
+            <a href="https://www.tiktok.com/@zlender.studio" target="_blank" rel="noopener"
+                class="socials-card group flex flex-col items-center gap-4 rounded-2xl border border-white/8 p-8 text-center transition-all duration-300 hover:border-white/25 hover:bg-white/5"
+                style="opacity:0; transform: translateY(40px); transition: opacity 0.6s ease 0.7s, transform 0.6s ease 0.7s, border-color 0.3s, background 0.3s;">
+                <img src="../assets/website files/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="TikTok" class="h-12 w-12 object-contain" />
+                <div>
+                    <h3 class="font-heading text-base font-bold text-white uppercase mb-1">TikTok</h3>
+                    <p class="font-body text-xs text-muted">Watch our content →</p>
+                </div>
+            </a>
+
+            <a href="/contact-us/"
+                class="socials-card group flex flex-col items-center gap-4 rounded-2xl border border-white/8 p-8 text-center transition-all duration-300 hover:border-white/25 hover:bg-white/5"
+                style="opacity:0; transform: translateY(40px); transition: opacity 0.6s ease 0.85s, transform 0.6s ease 0.85s, border-color 0.3s, background 0.3s;">
+                <img src="../assets/website files/Gmail_icon_(2020).svg.webp" alt="Gmail" class="h-12 w-12 object-contain" />
+                <div>
+                    <h3 class="font-heading text-base font-bold text-white uppercase mb-1">Gmail</h3>
+                    <p class="font-body text-xs text-muted">Contact us →</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Bottom divider -->
+    <div class="flex items-center gap-6 px-6 mt-16 mx-auto max-w-7xl socials-line-bottom" style="opacity:0; transform: scaleX(0.3); transition: opacity 0.8s ease 0.9s, transform 0.8s ease 0.9s;">
+        <div class="h-px flex-1 bg-white/10"></div>
+        <div class="w-1 h-1 rounded-full bg-white/20"></div>
+        <div class="h-px flex-1 bg-white/10"></div>
+    </div>
+
+</section>
+
+<script>
+const socialsSection = document.getElementById('socials-section');
+
+const socialsObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const line = socialsSection.querySelector('.socials-line');
+            const header = socialsSection.querySelector('.socials-header');
+            const sub = socialsSection.querySelector('.socials-sub');
+            const cards = socialsSection.querySelectorAll('.socials-card');
+            const lineBottom = socialsSection.querySelector('.socials-line-bottom');
+
+            if (line) { line.style.opacity = '1'; line.style.transform = 'scaleX(1)'; }
+            if (header) { header.style.opacity = '1'; header.style.transform = 'translateY(0)'; }
+            if (sub) { sub.style.opacity = '1'; sub.style.transform = 'translateY(0)'; }
+            cards.forEach(card => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; });
+            if (lineBottom) { lineBottom.style.opacity = '1'; lineBottom.style.transform = 'scaleX(1)'; }
+
+            socialsObs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+if (socialsSection) socialsObs.observe(socialsSection);
+</script>
+<!-- ═══════════════════════════════════════
+       CONTACT FORM
+       ═══════════════════════════════════════ -->
+  <section id="contact" class="section bg-card">
+    <div class="mx-auto max-w-2xl">
+      <h2 class="mb-2 text-center font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>REQUEST
+        A PROJECT QUOTE</h2>
+      <p class="mb-10 text-center font-body text-sm text-muted" data-animate>
+        Let's Bring Your Idea to Life. Tell us about your project and goals. Our team will review your requirements
+        and get back to you with a clear plan, timeline, and cost estimate — no surprises, no commitments.
+      </p>
+
+      <iframe name="hidden_iframe_contact" id="hidden_iframe_contact" style="display:none;"
+        onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your project quote request has been received.'); this.submitted=false; document.getElementById('contact-form').reset(); }"></iframe>
+      <form id="contact-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSe3EAujlJnyDr2UsESAbr97wWc32OwiVcHBauYbx8HbRg0log/formResponse"
+        method="POST" target="hidden_iframe_contact"
+        onsubmit="const hp = document.getElementById('confirm_email_contact'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('contact-form')) { return false; } document.getElementById('hidden_iframe_contact').submitted=true;"
+        class="space-y-5" data-animate>
+
+        <!-- BOT HONEYPOT -->
+        <div style="display:none;" aria-hidden="true">
+          <label for="confirm_email_contact">Leave this field empty</label>
+          <input type="text" id="confirm_email_contact" name="confirm_email" tabindex="-1" />
+        </div>
+        <div>
+          <label for="name"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Name</label>
+          <input id="name" name="entry.373946213" type="text" required
+            class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="Your full name" />
+        </div>
+        <div>
+          <label for="email"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Email</label>
+          <input id="email" name="entry.943562129" type="email" required
+            class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="you@example.com" />
+        </div>
+        <div>
+          <label for="project-title"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project Title</label>
+          <input id="project-title" name="entry.237758871" type="text" required
+            class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="e.g. Game Character Design" />
+        </div>
+        <div>
+          <label for="details"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project Details</label>
+          <textarea id="details" name="entry.634983441"
+ rows="5" required
+            class="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="Tell us about your project, goals, and timeline..."></textarea>
+        </div>
+        <div class="flex items-center gap-3">
+          <input id="newsletter" name="newsletter" type="checkbox"
+            class="h-4 w-4 rounded border-border bg-surface accent-white" />
+          <label for="newsletter" class="font-body text-xs text-muted">Subscribe to Newsletter</label>
+        </div>
+        <button type="submit" class="cta-button cta-button-filled w-full justify-center py-3 text-sm">
+          Submit
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+  
+
+
 
     <!-- FOOTER -->
     <footer class="border-t border-border bg-surface py-12">
         <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4">
             <div>
-                <h2 class="mb-4 font-heading text-2xl font-bold text-white uppercase">ZLENDER</h2>
+                <h2 class="mb-4 font-heading text-4xl font-bold text-white uppercase">ZLENDER</h2>
                 <p class="font-body text-sm text-muted">Creative 3D studio specializing in animation, modeling, and game
                     development.</p>
             </div>

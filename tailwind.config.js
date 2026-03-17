@@ -16,10 +16,10 @@ export default {
 
             /* ─── Typography (DataInventory.txt + MasterTask.txt) ─── */
             fontFamily: {
-                heading: ['"Wasted"', '"Syne"', 'sans-serif'],
-                body: ['"Inter"', 'system-ui', 'sans-serif'],
-                mono: ['"JetBrains Mono"', '"SF Mono"', 'monospace'],
-            },
+            heading: ['"Bebas Neue"', 'sans-serif'],
+            body: ['"Bebas Neue"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', '"SF Mono"', 'monospace'],
+        },
 
             /* ─── Custom Spacing / Sizing ─── */
             borderRadius: {
