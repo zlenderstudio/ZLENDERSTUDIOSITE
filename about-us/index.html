@@ -78,124 +78,313 @@
 </div>
     </section>
 
-    <!-- WHO ARE WE -->
-    <section class="py-24" style="background: #F5F0EB;">
-        <div class="mx-auto max-w-5xl px-6">
-            <h2 class="mb-4 text-center font-heading text-4xl font-bold uppercase tracking-widest text-black md:text-6xl"
-                data-animate>
-                WHO ARE WE</h2>
-            <p class="mb-12 text-center font-body text-xl font-medium tracking-wide text-gray-600 md:text-2xl"
-                data-animate>
-                We Build Worlds, Stories, and<br />Interactive Experiences
-            </p>
+    
+<!-- ABOUT HERO STATEMENT -->
+<section style="background: #000000; padding: 100px 24px 60px; position: relative; overflow: hidden;">
 
-            <div class="space-y-6 font-body text-lg leading-relaxed text-black" data-animate>
-                <p>
-                    <strong class="font-bold">ZLENDER</strong> is a creative 3D studio specializing in
-                    <strong class="font-bold">animation, high-quality 3D modeling, and full-scale game
-                        development</strong>.
-                    We help brands, creators, and studios bring ideas to life through visually compelling content and
-                    technically solid production.
-                </p>
-                <p>
-                    From stylized cartoon animations to immersive game worlds, our work blends
-                    <strong class="font-bold">creativity, precision, and performance</strong> to deliver results that
-                    stand out.
-                </p>
-                <p>
-                    We believe great projects happen when <strong class="font-bold">art and technology work
-                        together</strong>.
-                    That's why our artists and developers collaborate closely as one integrated team — from concept and
-                    design to production and final delivery.
-                </p>
+    <!-- Background grid -->
+    <div style="position: absolute; inset: 0; opacity: 0.06;">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="about-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="white" stroke-width="0.5"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#about-grid)" />
+        </svg>
+    </div>
+
+    <!-- Glowing orb -->
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,255,255,0.04), transparent); border-radius: 50%; pointer-events: none;"></div>
+
+    <div style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto; text-align: center;">
+
+        <!-- Eyebrow -->
+        <div class="about-fade" style="opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease;">
+            <div style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: 32px;">
+                <div style="height: 1px; width: 40px; background: rgba(255,255,255,0.2);"></div>
+                <span style="font-family: monospace; font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,0.4); text-transform: uppercase;">.</span>
+                <div style="height: 1px; width: 40px; background: rgba(255,255,255,0.2);"></div>
             </div>
         </div>
-    </section>
 
-    <!-- VALUES -->
-    <section class="section-full bg-black py-24">
-        <div class="mx-auto max-w-3xl px-6" data-animate>
-            <h2
-                class="mb-12 text-center font-heading text-3xl font-bold tracking-widest text-white uppercase md:text-5xl">
-                WHAT WE STAND FOR</h2>
-            <ul class="mx-auto max-w-lg space-y-6 font-body text-base text-gray-300 md:text-lg">
-                <li class="flex items-center gap-4"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white"></span>
-                    Reliable communication and fast turnaround</li>
-                <li class="flex items-center gap-4"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white"></span>
-                    Strong focus on visual quality and performance</li>
-                <li class="flex items-center gap-4"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white"></span>
-                    Long-term mindset, not just one-off delivery</li>
-            </ul>
-            <p class="mt-12 text-center font-body text-lg text-white md:text-xl">
-                Our goal is simple: create work we're proud of and clients can rely on.
+        <!-- Main headline -->
+        <div class="about-fade" style="opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease 0.15s, transform 0.8s ease 0.15s;">
+            <h1 style="font-family: 'Wasted', sans-serif; font-size: clamp(2.5rem, 7vw, 5.5rem); font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 3px; line-height: 1.05; margin-bottom: 24px;">
+                We Don't Just<br/>Make Content.<br/><span style="color: rgba(255,255,255,0.2);">We Make Impact.</span>
+            </h1>
+        </div>
+
+        <!-- Description -->
+        <div class="about-fade" style="opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;">
+            <p style="font-size: 16px; color: rgba(255,255,255,0.5); max-width: 620px; margin: 0 auto 48px; line-height: 1.8;">
+                ZLENDER is a creative 3D studio specializing in cartoon animation, high-quality modeling, and full game development — from concept to launch. We turn ideas into powerful visuals that convert and impress.
             </p>
         </div>
-    </section>
 
-    <!-- CTA -->
-    <section class="section bg-card">
-        <div class="mx-auto max-w-3xl text-center" data-animate>
-            <h2 class="mb-6 font-heading text-3xl font-bold text-white uppercase md:text-5xl">Let's Create Something
-                Extraordinary</h2>
-            <p class="mb-8 font-body text-base text-muted">
-                If you're looking for a studio that cares about your project as much as you do — ZLENDER is ready.
-            </p>
-            <a href="/contact-us/" class="cta-button cta-button-filled text-sm">REQUEST A QUOTE <span
-                    class="text-base">+</span></a>
+        <!-- Quick badges -->
+        <div class="about-fade" style="opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease 0.45s, transform 0.8s ease 0.45s;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                <span style="font-family: monospace; font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 9999px; padding: 6px 16px; text-transform: uppercase;">Top 1% Freelancer</span>
+                <span style="font-family: monospace; font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 9999px; padding: 6px 16px; text-transform: uppercase;">100% Completion Rate</span>
+                <span style="font-family: monospace; font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 9999px; padding: 6px 16px; text-transform: uppercase;">5★ Client Satisfaction</span>
+                <span style="font-family: monospace; font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 9999px; padding: 6px 16px; text-transform: uppercase;">Turkey 🇹🇷</span>
+            </div>
         </div>
-    </section>
 
-    <!-- CONTACT FORM -->
-    <section class="section bg-surface">
-        <div class="mx-auto max-w-2xl">
-            <h2 class="mb-2 text-center font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>
-                REQUEST A PROJECT QUOTE</h2>
-            <p class="mb-10 text-center font-body text-sm text-muted" data-animate>Let's Bring Your Idea to Life.</p>
-            <iframe name="hidden_iframe_aboutus" id="hidden_iframe_aboutus" style="display:none;"
-                onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your project quote request has been received.'); this.submitted=false; document.getElementById('aboutus-form').reset(); }"></iframe>
-            <form id="aboutus-form"
-                action="https://docs.google.com/forms/d/e/1FAIpQLSeZA01aOnXrqvzL4pC2diIDxa7UDMcYoc6qvo4DHzyAk2QB1g/formResponse"
-                method="POST" target="hidden_iframe_aboutus"
-                onsubmit="const hp = document.getElementById('confirm_email_aboutus'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('aboutus-form')) { return false; } document.getElementById('hidden_iframe_aboutus').submitted=true;"
-                class="space-y-5" data-animate>
+    </div>
+</section>
 
-                <!-- BOT HONEYPOT -->
-                <div style="display:none;" aria-hidden="true">
-                    <label for="confirm_email_aboutus">Leave this field empty</label>
-                    <input type="text" id="confirm_email_aboutus" name="confirm_email" tabindex="-1" />
-                </div>
-                <div><label
-                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Name</label>
-                    <input name="entry.1227890993" type="text" required
-                        class="w-full rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Full Name" />
-                </div>
-                <div><label
-                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Email</label>
-                    <input name="entry.1316634230" type="email" required
-                        class="w-full rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Example@Gmail.com" />
-                </div>
-                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
-                        Title</label>
-                    <input name="entry.1856353974" type="text" required
-                        class="w-full rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Project Title" />
-                </div>
-                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
-                        Details</label>
-                    <textarea name="entry.1398881846" rows="5" required
-                        class="w-full resize-none rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
-                        placeholder="Share Your Project Requirement!"></textarea>
-                </div>
-                <div class="flex items-center gap-3"><input name="newsletter" type="checkbox"
-                        class="h-4 w-4 rounded border-border bg-surface accent-white" /><label
-                        class="font-body text-xs text-muted">Subscribe to Newsletter</label></div>
-                <button type="submit"
-                    class="cta-button cta-button-filled w-full justify-center py-3 text-sm">Submit</button>
-            </form>
+<!-- WHAT WE OFFER -->
+<section style="background: #000000; padding: 60px 24px 100px; position: relative;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+
+        <!-- Section label -->
+        <div class="about-fade" style="opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; text-align: center; margin-bottom: 60px;">
+            <p style="font-family: monospace; font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 12px;">What We Do</p>
+            <h2 style="font-family: 'Wasted', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 3px;">
+                Full Creative<br/><span style="color: rgba(255,255,255,0.2);">Production Studio</span>
+            </h2>
         </div>
-    </section>
+
+        <!-- Services grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+
+            <!-- Service 1 -->
+            <div class="service-reveal" style="opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; position: relative; overflow: hidden; cursor: default;" onmouseover="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.background='#111';" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'; this.style.background='#0a0a0a';">
+                <div style="font-size: 36px; margin-bottom: 16px;">🎬</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 1.1rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">3D Animation</h3>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 16px;">Ads, cinematics, product videos, character animation — expressive stories built for impact.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Character Animation</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Cinematics</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Product Ads</span>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-reveal" style="opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; cursor: default;" onmouseover="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.background='#111';" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'; this.style.background='#0a0a0a';">
+                <div style="font-size: 36px; margin-bottom: 16px;">📺</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 1.1rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">Cartoon & Series</h3>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 16px;">Full cartoon and animated series production from storyboard to final render.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Storyboarding</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Series Production</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Voice Sync</span>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-reveal" style="opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; cursor: default;" onmouseover="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.background='#111';" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'; this.style.background='#0a0a0a';">
+                <div style="font-size: 36px; margin-bottom: 16px;">🧱</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 1.1rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">3D Modeling</h3>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 16px;">Characters, products, environments and game-ready assets built for any pipeline.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Characters</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Environments</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Products</span>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-reveal" style="opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease 0.3s, transform 0.7s ease 0.3s; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; cursor: default;" onmouseover="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.background='#111';" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'; this.style.background='#0a0a0a';">
+                <div style="font-size: 36px; margin-bottom: 16px;">✂️</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 1.1rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">Video & Motion</h3>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 16px;">2D editing, motion graphics, social media content and commercial brand videos.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Motion Graphics</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Social Content</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Brand Videos</span>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-reveal" style="opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease 0.4s, transform 0.7s ease 0.4s; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; cursor: default;" onmouseover="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.background='#111';" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'; this.style.background='#0a0a0a';">
+                <div style="font-size: 36px; margin-bottom: 16px;">🎮</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 1.1rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">Game Development</h3>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 16px;">Unity & Unreal full pipeline — from concept and mechanics to final release-ready build.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Unity</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Unreal</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Full Pipeline</span>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-reveal" style="opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease 0.5s, transform 0.7s ease 0.5s; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; cursor: default;" onmouseover="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.background='#111';" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'; this.style.background='#0a0a0a';">
+                <div style="font-size: 36px; margin-bottom: 16px;">🏛️</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 1.1rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">Architecture & Viz</h3>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 16px;">Architectural design and photorealistic visualization for spaces and concepts.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Architectural Viz</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">Photorealistic</span>
+                    <span style="font-family: monospace; font-size: 9px; color: rgba(255,255,255,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 3px 8px;">3D Renders</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section style="background: #0a0a0a; padding: 100px 24px; border-top: 1px solid rgba(255,255,255,0.04);">
+    <div style="max-width: 1000px; margin: 0 auto;">
+
+        <div class="about-fade" style="opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; text-align: center; margin-bottom: 70px;">
+            <p style="font-family: monospace; font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 12px;">Why Zlender</p>
+            <h2 style="font-family: 'Wasted', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 3px;">
+                What You Get<br/><span style="color: rgba(255,255,255,0.2);">Every Time</span>
+            </h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+
+            <div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; text-align: center; padding: 32px 20px;">
+                <div style="font-size: 32px; margin-bottom: 16px;">💎</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Premium Quality</h3>
+                <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">Production-grade output on every single project, no matter the size.</p>
+            </div>
+
+            <div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s; text-align: center; padding: 32px 20px;">
+                <div style="font-size: 32px; margin-bottom: 16px;">🎯</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Tailored Work</h3>
+                <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">Every project is built from scratch, specifically for your brand and vision.</p>
+            </div>
+
+            <div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s; text-align: center; padding: 32px 20px;">
+                <div style="font-size: 32px; margin-bottom: 16px;">📦</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Clean Source Files</h3>
+                <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">You own everything. All source files delivered, organized and ready to use.</p>
+            </div>
+
+            <div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease 0.3s, transform 0.7s ease 0.3s; text-align: center; padding: 32px 20px;">
+                <div style="font-size: 32px; margin-bottom: 16px;">⚡</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Fast Delivery</h3>
+                <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">Tight timelines met without sacrificing quality. We deliver on schedule, always.</p>
+            </div>
+
+            <div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease 0.4s, transform 0.7s ease 0.4s; text-align: center; padding: 32px 20px;">
+                <div style="font-size: 32px; margin-bottom: 16px;">🕐</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">24/7 Communication</h3>
+                <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">Always reachable. Updates, questions, revisions — handled fast, any time.</p>
+            </div>
+
+            <div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease 0.5s, transform 0.7s ease 0.5s; text-align: center; padding: 32px 20px;">
+                <div style="font-size: 32px; margin-bottom: 16px;">🔁</div>
+                <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Revisions Included</h3>
+                <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">We refine until you're 100% satisfied. Your approval is the only deadline that matters.</p>
+            </div>
+
+
+            <div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease 0.6s, transform 0.7s ease 0.6s; text-align: center; padding: 32px 20px;">
+    <div style="font-size: 32px; margin-bottom: 16px;">🌍</div>
+    <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Global Clients</h3>
+    <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">We've worked with clients across 20+ countries — from solo creators to established brands worldwide.</p>
+</div>
+
+<div class="perk-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease 0.7s, transform 0.7s ease 0.7s; text-align: center; padding: 32px 20px;">
+    <div style="font-size: 32px; margin-bottom: 16px;">🏆</div>
+    <h3 style="font-family: 'Wasted', sans-serif; font-size: 0.95rem; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Top 1% Rated</h3>
+    <p style="font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.7;">Ranked in the top 1% on Freelancer with a perfect 5.0 rating and 100% job completion rate.</p>
+</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FINAL CTA + CONTACT FORM -->
+<section style="background: #000000; padding: 100px 24px; border-top: 1px solid rgba(255,255,255,0.04);">
+
+    <!-- CTA Header -->
+    <div class="about-fade" style="opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; max-width: 600px; margin: 0 auto 80px; text-align: center;">
+        <p style="font-family: monospace; font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 20px;">Ready to Create?</p>
+        <h2 style="font-family: 'Wasted', sans-serif; font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 3px; line-height: 1.1; margin-bottom: 24px;">
+            Let's Bring Your<br/><span style="color: rgba(255,255,255,0.2);">Vision To Life</span>
+        </h2>
+        <p style="font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.7;">Premium quality. Tailored work. Clean source files. Fast delivery. 24/7 communication.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div style="max-width: 640px; margin: 0 auto; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; padding: 48px 40px;">
+        <h3 style="font-family: 'Wasted', sans-serif; font-size: 1.4rem; color: white; text-transform: uppercase; letter-spacing: 2px; text-align: center; margin-bottom: 8px;">Request A Project Quote</h3>
+        <p style="font-family: monospace; font-size: 11px; color: rgba(255,255,255,0.3); text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 36px;">No commitment required</p>
+
+        <iframe name="hidden_iframe_aboutus" id="hidden_iframe_aboutus" style="display:none;"
+            onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your project quote request has been received.'); this.submitted=false; document.getElementById('aboutus-form').reset(); }"></iframe>
+        <form id="aboutus-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSe3EAujlJnyDr2UsESAbr97wWc32OwiVcHBauYbx8HbRg0log/formResponse"
+            method="POST" target="hidden_iframe_aboutus"
+            onsubmit="const hp = document.getElementById('confirm_email_aboutus'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('aboutus-form')) { return false; } document.getElementById('hidden_iframe_aboutus').submitted=true;"
+            style="display: flex; flex-direction: column; gap: 16px;">
+
+            <div style="display:none;" aria-hidden="true">
+                <label for="confirm_email_aboutus">Leave this field empty</label>
+                <input type="text" id="confirm_email_aboutus" name="confirm_email" tabindex="-1" />
+            </div>
+
+            <div>
+                <label style="display: block; font-family: monospace; font-size: 9px; letter-spacing: 3px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 8px;">Name</label>
+                <input name="entry.373946213" type="text" required placeholder="Your full name"
+                    style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 16px; color: white; font-size: 14px; outline: none; transition: border-color 0.3s ease; box-sizing: border-box;"
+                    onfocus="this.style.borderColor='rgba(255,255,255,0.25)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'" />
+            </div>
+
+            <div>
+                <label style="display: block; font-family: monospace; font-size: 9px; letter-spacing: 3px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 8px;">Email</label>
+                <input name="entry.943562129" type="email" required placeholder="you@example.com"
+                    style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 16px; color: white; font-size: 14px; outline: none; transition: border-color 0.3s ease; box-sizing: border-box;"
+                    onfocus="this.style.borderColor='rgba(255,255,255,0.25)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'" />
+            </div>
+
+            <div>
+                <label style="display: block; font-family: monospace; font-size: 9px; letter-spacing: 3px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 8px;">Project Title</label>
+                <input name="entry.237758871" type="text" required placeholder="e.g. Game Character Design"
+                    style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 16px; color: white; font-size: 14px; outline: none; transition: border-color 0.3s ease; box-sizing: border-box;"
+                    onfocus="this.style.borderColor='rgba(255,255,255,0.25)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'" />
+            </div>
+
+            <div>
+                <label style="display: block; font-family: monospace; font-size: 9px; letter-spacing: 3px; color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 8px;">Project Details</label>
+                <textarea name="entry.634983441" rows="5" required placeholder="Tell us about your project, goals, and timeline..."
+                    style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 16px; color: white; font-size: 14px; outline: none; resize: none; transition: border-color 0.3s ease; box-sizing: border-box;"
+                    onfocus="this.style.borderColor='rgba(255,255,255,0.25)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'"></textarea>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <input name="newsletter" type="checkbox" style="width: 16px; height: 16px; accent-color: white;" />
+                <label style="font-family: monospace; font-size: 10px; color: rgba(255,255,255,0.3); letter-spacing: 1px;">Subscribe to Newsletter</label>
+            </div>
+
+            <button type="submit" style="width: 100%; background: white; color: black; border: none; border-radius: 9999px; padding: 14px; font-family: monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; cursor: pointer; transition: all 0.3s ease; margin-top: 8px;"
+                onmouseover="this.style.background='transparent';this.style.color='white';this.style.border='1px solid rgba(255,255,255,0.4)';"
+                onmouseout="this.style.background='white';this.style.color='black';this.style.border='none';">
+                Submit Request +
+            </button>
+        </form>
+    </div>
+</section>
+
+<style>
+@keyframes statusPing2 {
+    0% { transform: scale(1); opacity: 0.8; box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+    100% { transform: scale(1); opacity: 0.8; box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
+}
+</style>
+
+<script>
+const allFadeEls = document.querySelectorAll('.about-fade, .service-reveal, .perk-card');
+const aboutObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            aboutObs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+allFadeEls.forEach(el => aboutObs.observe(el));
+</script>
+
 
     <!-- FOOTER -->
     <footer class="border-t border-border bg-surface py-12">
