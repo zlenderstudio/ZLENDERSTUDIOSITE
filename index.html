@@ -215,33 +215,52 @@
     </h2>
 
     <!-- Stats cards -->
-    <!-- Stats cards -->
-    <div class="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <div class="flex items-center justify-between gap-4 lg:block">
-          <p class="font-body text-sm text-muted">Projects successfully delivered across 3D animation, modeling, and game development.</p>
-          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">200+</p>
+    <style>
+      .stat-card-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        height: 100%;
+      }
+      .stat-num {
+        font-size: 2.5rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+        width: 110px;
+        text-align: right;
+        line-height: 1;
+      }
+    </style>
+
+    <div class="mx-auto mt-16 grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" style="max-width: 1400px;">
+      <div class="rounded-3xl border border-border bg-card" style="padding: 28px 24px;" data-animate>
+        <div class="stat-card-inner">
+          <p class="font-body text-sm text-muted" style="line-height: 1.6;">Projects delivered across 3D animation, modeling & game development.</p>
+          <p class="font-heading font-bold text-white stat-num">200+</p>
         </div>
       </div>
-      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <div class="flex items-center justify-between gap-4 lg:block">
-          <p class="font-body text-sm text-muted">Perfect client rating with consistent five-star satisfaction. Never an unsatisfied Client.</p>
-          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">5.0 ★</p>
+      <div class="rounded-3xl border border-border bg-card" style="padding: 28px 24px;" data-animate>
+        <div class="stat-card-inner">
+          <p class="font-body text-sm text-muted" style="line-height: 1.6;">Perfect five-star rating. Never an unsatisfied client.</p>
+          <p class="font-heading font-bold text-white stat-num">5.0 ★</p>
         </div>
       </div>
-      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <div class="flex items-center justify-between gap-4 lg:block">
-          <p class="font-body text-sm text-muted">Verified client reviews from real projects and long-term collaborations.</p>
-          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">99+</p>
+      <div class="rounded-3xl border border-border bg-card" style="padding: 28px 24px;" data-animate>
+        <div class="stat-card-inner">
+          <p class="font-body text-sm text-muted" style="line-height: 1.6;">Verified reviews from real projects and long-term collaborations.</p>
+          <p class="font-heading font-bold text-white stat-num">99+</p>
         </div>
       </div>
-      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <div class="flex items-center justify-between gap-4 lg:block">
-          <p class="font-body text-sm text-muted">Job completion rate — every project delivered, every commitment honored.</p>
-          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">100%</p>
+      <div class="rounded-3xl border border-border bg-card" style="padding: 28px 24px;" data-animate>
+        <div class="stat-card-inner">
+          <p class="font-body text-sm text-muted" style="line-height: 1.6;">Every project delivered, every commitment honored on time.</p>
+          <p class="font-heading font-bold text-white stat-num">100%</p>
         </div>
       </div>
     </div>
+
+    
   </section>
 
  
