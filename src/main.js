@@ -74,7 +74,8 @@ function initLazyVideos() {
     // Load and play a video
     function loadVideo(video) {
         const src = getVideoSrc(video);
-        if (!src || video.src === src || video.querySelector('source')) return;
+        if (!src || video.dataset.loaded === 'true') return;
+        video.dataset.loaded = 'true';
 
         video.src = src;
         video.load();
@@ -118,13 +119,12 @@ function initLazyVideos() {
                     const video = entry.target;
                     if (entry.isIntersecting) {
                         loadVideo(video);
-                    } else {
-                        video.pause();
                     }
+                    // Removed the else/pause — it was killing videos before they loaded
                 });
             },
             {
-                rootMargin: '400px 0px', // start loading 400px before visible
+                rootMargin: '400px 0px',
                 threshold: 0.01,
             }
         );
