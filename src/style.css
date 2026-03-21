@@ -390,3 +390,14 @@
     gap: 0.75rem;
   }
 }
+
+/* ─── Timeline grid — 2 cols mobile, 4 cols desktop ─── */
+#timeline-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+@media (min-width: 768px) {
+  #timeline-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}

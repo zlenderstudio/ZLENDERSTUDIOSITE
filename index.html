@@ -131,19 +131,19 @@
        STATS BAR
        ═══════════════════════════════════════ -->
   <section id="stats" class="bg-card border-t border-b border-border">
-  <div class="mx-auto max-w-5xl px-4 py-10">
+  <div class="mx-auto max-w-5xl px-4 py-4">
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center;">
       <div>
-        <p style="font-family: inherit; font-size: clamp(1.2rem, 4vw, 3rem); font-weight: 700; color: white;">5.0</p>
-        <p style="font-size: clamp(8px, 2vw, 14px); color: #888; margin-top: 4px;">Elite Client Rating</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0;">5.0</p>
+        <p style="font-size: 10px; color: #666; margin-top: 2px; letter-spacing: 1px; text-transform: uppercase;">Elite Client Rating</p>
       </div>
       <div>
-        <p style="font-family: inherit; font-size: clamp(1.2rem, 4vw, 3rem); font-weight: 700; color: white;">100+</p>
-        <p style="font-size: clamp(8px, 2vw, 14px); color: #888; margin-top: 4px;">Completed Projects</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0;">100+</p>
+        <p style="font-size: 10px; color: #666; margin-top: 2px; letter-spacing: 1px; text-transform: uppercase;">Completed Projects</p>
       </div>
       <div>
-        <p style="font-family: inherit; font-size: clamp(1.2rem, 4vw, 3rem); font-weight: 700; color: white;">100%</p>
-        <p style="font-size: clamp(8px, 2vw, 14px); color: #888; margin-top: 4px;">Client Satisfaction Rate</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0;">100%</p>
+        <p style="font-size: 10px; color: #666; margin-top: 2px; letter-spacing: 1px; text-transform: uppercase;">Client Satisfaction Rate</p>
       </div>
     </div>
   </div>
@@ -215,26 +215,31 @@
     </h2>
 
     <!-- Stats cards -->
+    <!-- Stats cards -->
     <div class="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <p class="font-body text-sm text-muted">Projects successfully delivered across 3D animation, modeling, and game
-          development.</p>
-        <p class="mt-3 font-heading text-3xl font-bold text-white">200+</p>
+        <div class="flex items-center justify-between gap-4 lg:block">
+          <p class="font-body text-sm text-muted">Projects successfully delivered across 3D animation, modeling, and game development.</p>
+          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">200+</p>
+        </div>
       </div>
       <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <p class="font-body text-sm text-muted">Perfect client rating with consistent five-star satisfaction. Never an
-          unsatisfied Client</p>
-        <p class="mt-3 font-heading text-3xl font-bold text-white">5.0 ★</p>
+        <div class="flex items-center justify-between gap-4 lg:block">
+          <p class="font-body text-sm text-muted">Perfect client rating with consistent five-star satisfaction. Never an unsatisfied Client.</p>
+          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">5.0 ★</p>
+        </div>
       </div>
       <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <p class="font-body text-sm text-muted">Verified client reviews from real projects and long-term collaborations.
-        </p>
-        <p class="mt-3 font-heading text-3xl font-bold text-white">99+</p>
+        <div class="flex items-center justify-between gap-4 lg:block">
+          <p class="font-body text-sm text-muted">Verified client reviews from real projects and long-term collaborations.</p>
+          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">99+</p>
+        </div>
       </div>
       <div class="rounded-3xl border border-border bg-card p-6" data-animate>
-        <p class="font-body text-sm text-muted">Job completion rate — every project delivered, every commitment honored.
-        </p>
-        <p class="mt-3 font-heading text-3xl font-bold text-white">100%</p>
+        <div class="flex items-center justify-between gap-4 lg:block">
+          <p class="font-body text-sm text-muted">Job completion rate — every project delivered, every commitment honored.</p>
+          <p class="font-heading font-bold text-white whitespace-nowrap lg:mt-3 shrink-0" style="font-size: 1.75rem; min-width: 80px; text-align: right;">100%</p>
+        </div>
       </div>
     </div>
   </section>
@@ -259,12 +264,12 @@
 
         <!-- Card 1: 3D Animation -->
         <div class="relative overflow-hidden rounded-3xl border border-border bg-card flex flex-col" data-animate>
-            <div class="relative w-full" style="aspect-ratio: 16/9;">
-                <video class="lazy-video w-full h-full object-cover rounded-t-3xl"
-                    data-src="/assets/files/newvids/vid3.mp4"
-                    autoplay muted loop playsinline preload="none"
-                    poster="/assets/files/Screenshot_2024-10-22_033750.png">
-                </video>
+            <div class="relative w-full rounded-t-3xl overflow-hidden" style="aspect-ratio: 16/9;">
+                <iframe class="w-full h-full"
+                    src="https://www.youtube.com/embed/lDrWQ24aicQ?autoplay=1&mute=1&loop=1&playlist=lDrWQ24aicQ&controls=0&showinfo=0&rel=0"
+                    frameborder="0" allowfullscreen
+                    allow="autoplay; encrypted-media">
+                </iframe>
             </div>
             <div class="flex flex-col flex-1 p-7">
                 <h3 class="mb-4 font-heading text-xl font-bold text-white uppercase md:text-2xl">3D Animation Videos</h3>
@@ -279,12 +284,12 @@
 
         <!-- Card 2: Game Development -->
         <div class="relative overflow-hidden rounded-3xl border border-border bg-card flex flex-col" data-animate>
-            <div class="relative w-full" style="aspect-ratio: 16/9;">
-                <video class="lazy-video w-full h-full object-cover rounded-t-3xl"
-                    data-src="/assets/files/newvids/vid1.mp4"
-                    autoplay muted loop playsinline preload="none"
-                    poster="/assets/files/game model.png">
-                </video>
+            <div class="relative w-full rounded-t-3xl overflow-hidden" style="aspect-ratio: 16/9;">
+                <iframe class="w-full h-full"
+                    src="https://www.youtube.com/embed/eBGmxYNUqbM?autoplay=1&mute=1&loop=1&playlist=eBGmxYNUqbM&controls=0&showinfo=0&rel=0"
+                    frameborder="0" allowfullscreen
+                    allow="autoplay; encrypted-media">
+                </iframe>
             </div>
             <div class="flex flex-col flex-1 p-7">
                 <h3 class="mb-4 font-heading text-xl font-bold text-white uppercase md:text-2xl">Game Development</h3>
@@ -299,8 +304,12 @@
 
         <!-- Card 3: Modeling & Design -->
         <div class="relative overflow-hidden rounded-3xl border border-border bg-card flex flex-col" data-animate>
-            <div class="relative w-full flex items-center justify-center bg-[#111] rounded-t-3xl" style="aspect-ratio: 16/9;">
-                <span style="font-family: 'Wasted', sans-serif; font-size: 4rem; color: rgba(255,255,255,0.06); letter-spacing: 4px; user-select:none;">3D</span>
+            <div class="relative w-full rounded-t-3xl overflow-hidden" style="aspect-ratio: 16/9;">
+                <iframe class="w-full h-full"
+                    src="https://www.youtube.com/embed/ahWaQf1L3Tw?autoplay=1&mute=1&loop=1&playlist=ahWaQf1L3Tw&controls=0&showinfo=0&rel=0"
+                    frameborder="0" allowfullscreen
+                    allow="autoplay; encrypted-media">
+                </iframe>
             </div>
             <div class="flex flex-col flex-1 p-7">
                 <h3 class="mb-4 font-heading text-xl font-bold text-white uppercase md:text-2xl">Modeling &amp; Design</h3>
@@ -802,7 +811,75 @@ allFadeEls.forEach(el => aboutObs.observe(el));
   </footer>
 
   <!-- Network section (Freelancer badge / About-Us bridge) -->
-  <span id="network"></span>
+  <!-- ─── Floating CTA Button ─── -->
+  <a href="/contact-us/"
+     id="floating-cta"
+     aria-label="Request a Quote"
+     style="
+       position: fixed;
+       right: 20px;
+       bottom: 30px;
+       z-index: 9999;
+       width: 56px;
+       height: 56px;
+       border-radius: 50px;
+       background: #ffffff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+       overflow: hidden;
+       transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+       text-decoration: none;
+     "
+     onmouseover="
+       this.style.width='180px';
+       this.style.height='56px';
+       this.style.boxShadow='0 6px 32px rgba(0,0,0,0.7)';
+       document.getElementById('float-z').style.opacity='0';
+       document.getElementById('float-z').style.transform='scale(0.5)';
+       document.getElementById('float-logo').style.opacity='1';
+       document.getElementById('float-logo').style.transform='scale(1)';
+     "
+     onmouseout="
+       this.style.width='56px';
+       this.style.height='56px';
+       this.style.boxShadow='0 4px 24px rgba(0,0,0,0.5)';
+       document.getElementById('float-z').style.opacity='1';
+       document.getElementById('float-z').style.transform='scale(1)';
+       document.getElementById('float-logo').style.opacity='0';
+       document.getElementById('float-logo').style.transform='scale(0.5)';
+     ">
+
+    <!-- Z logo (default) -->
+    <img id="float-z"
+         src="./assets/files/Zlogoblack.png"
+         alt="Z"
+         style="
+           position: absolute;
+           width: 32px;
+           height: 32px;
+           object-fit: contain;
+           opacity: 1;
+           transform: scale(1);
+           transition: opacity 0.25s ease, transform 0.25s ease;
+         " />
+
+    <!-- Full logo (on hover) -->
+    <img id="float-logo"
+         src="./assets/files/LOGO TRY 2.png"
+         alt="ZLENDER"
+         style="
+           position: absolute;
+           width: 140px;
+           height: auto;
+           object-fit: contain;
+           opacity: 0;
+           transform: scale(0.5);
+           transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+           filter: invert(1);
+         " />
+  </a>
 
 </body>
 

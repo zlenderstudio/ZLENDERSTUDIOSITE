@@ -94,19 +94,19 @@
        STATS BAR
        ═══════════════════════════════════════ -->
   <section id="stats" class="bg-card border-t border-b border-border">
-  <div class="mx-auto max-w-5xl px-4 py-10">
+  <div class="mx-auto max-w-5xl px-4 py-4">
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center;">
       <div>
-        <p style="font-family: inherit; font-size: clamp(1.2rem, 4vw, 3rem); font-weight: 700; color: white;">5.0</p>
-        <p style="font-size: clamp(8px, 2vw, 14px); color: #888; margin-top: 4px;">Elite Client Rating</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0;">5.0</p>
+        <p style="font-size: 10px; color: #666; margin-top: 2px; letter-spacing: 1px; text-transform: uppercase;">Elite Client Rating</p>
       </div>
       <div>
-        <p style="font-family: inherit; font-size: clamp(1.2rem, 4vw, 3rem); font-weight: 700; color: white;">100+</p>
-        <p style="font-size: clamp(8px, 2vw, 14px); color: #888; margin-top: 4px;">Completed Projects</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0;">100+</p>
+        <p style="font-size: 10px; color: #666; margin-top: 2px; letter-spacing: 1px; text-transform: uppercase;">Completed Projects</p>
       </div>
       <div>
-        <p style="font-family: inherit; font-size: clamp(1.2rem, 4vw, 3rem); font-weight: 700; color: white;">100%</p>
-        <p style="font-size: clamp(8px, 2vw, 14px); color: #888; margin-top: 4px;">Client Satisfaction Rate</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0;">100%</p>
+        <p style="font-size: 10px; color: #666; margin-top: 2px; letter-spacing: 1px; text-transform: uppercase;">Client Satisfaction Rate</p>
       </div>
     </div>
   </div>
@@ -1944,6 +1944,159 @@ function animateCount(id, from, to, suffix, duration) {
 })();
 </script>
 
+
+<!-- WELCOME ANIMATION SECTION -->
+<section style="background: #000000; padding: 60px 24px; border-top: 1px solid rgba(255,255,255,0.04);">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <p style="font-family: monospace; font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,0.2); text-transform: uppercase; margin-bottom: 32px;">— We Make It Happen —</p>
+        <canvas id="welcome-canvas" width="900" height="260" style="width:100%; height:auto; display:block;"></canvas>
+        <p style="font-family: monospace; font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,0.15); text-transform: uppercase; margin-top: 32px;">every frame crafted by hand</p>
+    </div>
+</section>
+
+<script>
+(function(){
+    const c = document.getElementById('welcome-canvas');
+    const ctx = c.getContext('2d');
+    const W = c.width, H = c.height;
+    const GY = 185;
+    const CX = W / 2;
+
+    function line(x1,y1,x2,y2){
+        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+    }
+
+    let t = 0;
+
+    function tick(){
+        t += 0.02;
+        ctx.clearRect(0,0,W,H);
+
+        // ground line
+        ctx.strokeStyle='rgba(255,255,255,0.07)';
+        ctx.lineWidth=1;
+        ctx.beginPath(); ctx.moveTo(W*0.1,GY); ctx.lineTo(W*0.9,GY); ctx.stroke();
+
+        ctx.strokeStyle='rgba(255,255,255,0.88)';
+        ctx.lineWidth=2.8;
+        ctx.lineCap='round';
+        ctx.lineJoin='round';
+
+        const torsoLen = 40;
+        const headR = 13;
+        const ul = 26, ll = 24;
+
+        const breathe = Math.sin(t * 0.9) * 2.5;
+
+        // hip sits so feet land exactly on GY
+        const hY = GY - ul - ll;
+        // shoulder
+        const sX = CX;
+        const sY = hY - torsoLen + breathe * 0.3;
+
+        // ── LEGS ──
+        line(CX - 6, hY, CX - 8, hY + ul);
+        line(CX - 8, hY + ul, CX - 8, GY);
+        line(CX + 6, hY, CX + 8, hY + ul);
+        line(CX + 8, hY + ul, CX + 8, GY);
+
+        // ── TORSO ──
+        line(CX, hY, sX, sY);
+
+        // ── HEAD ──
+        ctx.beginPath();
+        ctx.arc(sX, sY - headR, headR, 0, Math.PI * 2);
+        ctx.stroke();
+
+        // ── LEFT ARM — relaxed down ──
+        const leftAngle = 0.25 + Math.sin(t * 0.6) * 0.05;
+        const laEx = sX - 5 + Math.sin(-leftAngle) * ul;
+        const laEy = sY + 5 + Math.cos(leftAngle) * ul;
+        const laHx = laEx + Math.sin(-leftAngle + 0.2) * ll;
+        const laHy = laEy + Math.cos(leftAngle - 0.2) * ll;
+        line(sX - 5, sY + 5, laEx, laEy);
+        line(laEx, laEy, laHx, laHy);
+
+        // ── RIGHT ARM — waving ──
+        const waveAngle = -1.8 + Math.sin(t * 2.5) * 0.25;
+        const waveFore  = -0.6 + Math.sin(t * 2.5 + 0.5) * 0.5;
+        const raEx = sX + 5 + Math.sin(-waveAngle) * ul;
+        const raEy = sY + 5 + Math.cos(-waveAngle) * ul;
+        const raHx = raEx + Math.sin(-waveAngle - waveFore) * ll;
+        const raHy = raEy + Math.cos(-waveAngle - waveFore) * ll;
+        line(sX + 5, sY + 5, raEx, raEy);
+        line(raEx, raEy, raHx, raHy);
+
+        // ── EYES ──
+        const eyeY = sY - headR;
+        ctx.fillStyle = 'rgba(255,255,255,0.9)';
+        ctx.beginPath(); ctx.arc(sX - 4, eyeY - 1, 2, 0, Math.PI*2); ctx.fill();
+        ctx.beginPath(); ctx.arc(sX + 4, eyeY - 1, 2, 0, Math.PI*2); ctx.fill();
+
+        // ── SMILE ──
+        ctx.strokeStyle = 'rgba(255,255,255,0.7)';
+        ctx.lineWidth = 1.8;
+        ctx.beginPath();
+        ctx.arc(sX, eyeY + 2, 5, 0.2, Math.PI - 0.2);
+        ctx.stroke();
+
+        // ── SHADOW ──
+        ctx.save();
+        ctx.globalAlpha = 0.07;
+        ctx.fillStyle = 'white';
+        ctx.beginPath();
+        ctx.ellipse(CX, GY + 3, 24, 5, 0, 0, Math.PI*2);
+        ctx.fill();
+        ctx.restore();
+
+        requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+})();
+</script>
+<script>
+const aboutSection = document.getElementById('about');
+const aboutTitle = aboutSection.querySelector('.about-title');
+const aboutTyped = aboutSection.querySelector('.about-typed');
+
+const fullText = "ZLENDER is a creative 3D studio specializing in cartoon animation, high-quality 3D modeling, and full game development. From concept to launch, we're a Top 1% freelancer with a 100% completion rate and 5-star client satisfaction. We bring ideas to life through powerful visuals, animations, and videos that convert and impress.";
+
+let typed = false;
+
+const aboutObs2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !typed) {
+            typed = true;
+
+            // Fade in title
+            aboutTitle.style.opacity = '1';
+            aboutTitle.style.transform = 'translateY(0)';
+
+            // Start typing after title fades in
+            setTimeout(() => {
+                aboutTyped.style.opacity = '1';
+                let i = 0;
+                const speed = 18;
+                function typeChar() {
+                    if (i < fullText.length) {
+                        aboutTyped.textContent += fullText.charAt(i);
+                        i++;
+                        setTimeout(typeChar, speed);
+                    }
+                }
+                typeChar();
+            }, 600);
+
+            aboutObs2.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+
+if (aboutSection) aboutObs2.observe(aboutSection);
+</script>
+
+
 <!-- FINAL CTA + CONTACT FORM -->
 <section style="background: #000000; padding: 100px 24px; border-top: 1px solid rgba(255,255,255,0.04);">
 
@@ -2087,6 +2240,128 @@ allFadeEls.forEach(el => aboutObs.observe(el));
             <p class="text-center font-body text-xs text-muted">© 2026 Zlender Studio. All rights reserved.</p>
         </div>
     </footer>
+
+<!-- ─── Floating CTA Button ─── -->
+  <a href="/contact-us/"
+     id="floating-cta"
+     aria-label="Request a Quote"
+     style="
+       position: fixed;
+       right: 20px;
+       bottom: 30px;
+       z-index: 9999;
+       width: 56px;
+       height: 56px;
+       border-radius: 50px;
+       background: #ffffff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+       overflow: hidden;
+       transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+       text-decoration: none;
+       cursor: grab;
+       user-select: none;
+     ">
+    <img id="float-z"
+         src="/assets/files/Zlogoblack.png"
+         alt="Z"
+         style="
+           position: absolute;
+           width: 32px;
+           height: 32px;
+           object-fit: contain;
+           opacity: 1;
+           transform: scale(1);
+           transition: opacity 0.25s ease, transform 0.25s ease;
+           pointer-events: none;
+         " />
+    <img id="float-logo"
+         src="/assets/files/LOGO TRY 2.png"
+         alt="ZLENDER"
+         style="
+           position: absolute;
+           width: 140px;
+           height: auto;
+           object-fit: contain;
+           opacity: 0;
+           transform: scale(0.5);
+           transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+           filter: invert(1);
+           pointer-events: none;
+         " />
+  </a>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('floating-cta');
+      const floatZ = document.getElementById('float-z');
+      const floatLogo = document.getElementById('float-logo');
+
+      let isDragging = false;
+      let didDrag = false;
+      let startX, startY, startLeft, startTop;
+
+      function initPosition() {
+        const rect = btn.getBoundingClientRect();
+        btn.style.left = rect.left + 'px';
+        btn.style.top = rect.top + 'px';
+        btn.style.right = 'auto';
+        btn.style.bottom = 'auto';
+      }
+
+      btn.addEventListener('mousedown', (e) => {
+        initPosition();
+        isDragging = true;
+        didDrag = false;
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = parseInt(btn.style.left);
+        startTop = parseInt(btn.style.top);
+        btn.style.cursor = 'grabbing';
+        e.preventDefault();
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) didDrag = true;
+        btn.style.left = (startLeft + dx) + 'px';
+        btn.style.top = (startTop + dy) + 'px';
+      });
+
+      document.addEventListener('mouseup', () => {
+        if (!isDragging) return;
+        isDragging = false;
+        btn.style.cursor = 'grab';
+        if (!didDrag) {
+          window.location.href = '/contact-us/';
+        }
+      });
+
+      btn.addEventListener('mouseenter', () => {
+        if (isDragging) return;
+        btn.style.width = '180px';
+        btn.style.boxShadow = '0 6px 32px rgba(0,0,0,0.7)';
+        floatZ.style.opacity = '0';
+        floatZ.style.transform = 'scale(0.5)';
+        floatLogo.style.opacity = '1';
+        floatLogo.style.transform = 'scale(1)';
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        if (isDragging) return;
+        btn.style.width = '56px';
+        btn.style.boxShadow = '0 4px 24px rgba(0,0,0,0.5)';
+        floatZ.style.opacity = '1';
+        floatZ.style.transform = 'scale(1)';
+        floatLogo.style.opacity = '0';
+        floatLogo.style.transform = 'scale(0.5)';
+      });
+    })();
+  </script>
 
 </body>
 
