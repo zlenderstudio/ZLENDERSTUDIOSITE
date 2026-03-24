@@ -3,6 +3,13 @@
     "outputDirectory": "dist",
     "framework": "vite",
     "cleanUrls": true,
+    "redirects": [
+        { "source": "/services/", "destination": "/3D-Animation-Services", "permanent": true },
+        { "source": "/services", "destination": "/3D-Animation-Services", "permanent": true }
+    ],
+    "rewrites": [
+        { "source": "/3D-Animation-Services", "destination": "/services/" }
+    ],
     "headers": [
         {
             "source": "/(.*)",
